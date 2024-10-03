@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+    xmlns:th="http://www.thymeleaf.org" 
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<meta charset="UTF-8">
+	<title>Studentski portal | Prirodno-matematički fakultet - Univerzitet u Kragujevcu</title>
+	<link rel="stylesheet" href="/css/spectrum-icons.css" th:href="@{/css/spectrum-icons.css}">
+	<link rel="stylesheet" href="/css/spectrum-lightest.css" th:href="@{/css/spectrum-lightest.css}">
+	<link rel="stylesheet" href="/css/panel.css" th:href="@{/css/panel.css}">
+	<script src="/js/loadIcons.js"></script>
+	<script>
+      loadIcons('https://unpkg.com/@adobe/spectrum-css@2.15.1/dist/icons/spectrum-css-icons.svg');
+      loadIcons('https://unpkg.com/@adobe/spectrum-css@2.15.1/dist/icons/spectrum-icons.svg');
+	</script>
+</head>
+<body class="spectrum spectrum--lightest spectrum--medium">
+<div class="wrapper">
+	<div class="login-panel"></div>
+	<div class="spectrum-Toast spectrum-Toast--info">
+		<li class="spectrum-Breadcrumbs-item">
+			<object class="spectrum-Breadcrumbs-item" data="/img/logo.svg" type="image/svg+xml"></object>
+			<div style="border-left: 1px solid #ffffff; height:25px; margin-left: 10px;"></div>
+		</li>
+		<nav>
+			<ul class="spectrum-Breadcrumbs">
+				<li class="spectrum-Breadcrumbs-item">
+					<div class="spectrum-Breadcrumbs-itemLink" role="link" tabindex="0">Studentski portal</div>
+				</li>
+
+			</ul>
+		</nav>
+		<li style="cursor: pointer;" onclick="logout()" class="spectrum-Breadcrumbs-item user-Account">
+			<div class="spectrum-Breadcrumbs-itemLink" role="link" tabindex="0">Odjava</div>
+			<a class="spectrum-Breadcrumbs-itemLink" role="link" aria-current="page" th:text="${name_surname}"></a>
+			<svg focusable="false" aria-hidden="true" class="spectrum-Icon spectrum-Icon--sizeM">
+				<use xlink:href="#spectrum-icon-18-User"></use>
+			</svg>
+		</li>
+	</div>
+
+	<div class="panel">
+		<div class="spectrum-Accordion" role="region">
+			<div id="accordion1" class="spectrum-Accordion-item is-open" role="presentation">
+
+				<!-- WAI-ARIA 1.1: Item header is a <button> wrapped within a <h3> element, rather than a <div> element with role="tab" -->
+				<h3 onclick="changeActivity('accordion1')" class="spectrum-Accordion-itemHeading">
+					<!-- WAI-ARIA 1.1: Item header <button> uses aria-expanded attribute to indicate expanded state. -->
+					<button class="spectrum-Accordion-itemHeader" type="button" id="spectrum-accordion-item-0-header" aria-controls="spectrum-accordion-item-0-content" aria-expanded="true">Početna</button>
+					<svg class="spectrum-Icon spectrum-UIIcon-ChevronRightMedium spectrum-Accordion-itemIndicator" focusable="false" aria-hidden="true">
+						<use xlink:href="#spectrum-css-icon-ChevronRightMedium"></use>
+					</svg>
+				</h3>
+				<div onclick="overview()" class="spectrum-Accordion-itemContent" role="region" id="spectrum-accordion-item-0-content" aria-labelledby="spectrum-accordion-item-0-header">Pregled</div>
+			</div>
+			<div id="accordion2" class="spectrum-Accordion-item" role="presentation">
+				<h3 onclick="changeActivity('accordion2')" class="spectrum-Accordion-itemHeading">
+					<button class="spectrum-Accordion-itemHeader" type="button" id="spectrum-accordion-item-1-header" aria-controls="spectrum-accordion-item-1-content" aria-expanded="false">Ispiti</button>
+					<svg class="spectrum-Icon spectrum-UIIcon-ChevronRightMedium spectrum-Accordion-itemIndicator" focusable="false" aria-hidden="true">
+						<use xlink:href="#spectrum-css-icon-ChevronRightMedium"></use>
+					</svg>
+				</h3>
+				<div onclick="waitlist()" class="spectrum-Accordion-itemContent" role="region" id="spectrum-accordion-item-1-content" aria-labelledby="spectrum-accordion-item-1-header">Lista čekanja</div>
+			</div>
+		</div>
+	</div>
+	<div th:text="${content}" class="content"></div>
+</div>
+<script src="js/deliverContent.js"></script>
+</body>
+</html>

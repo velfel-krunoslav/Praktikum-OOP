@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="4" viewBox="0 0 16 4" width="16">
+  <title>DoubleGripper</title>
+  <rect id="ToDelete" fill="#ff13dc" opacity="0" width="16" height="4" /><g>
+    <path d="M15.49,3H.51a.5.5,0,1,0,0,1H15.49a.5.5,0,1,0,0-1Z" />
+    <path d="M.51,1H15.49a.5.5,0,0,0,0-1H.51a.5.5,0,0,0,0,1Z" />
+  </g>
+</svg>

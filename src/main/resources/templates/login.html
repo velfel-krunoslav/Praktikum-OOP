@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+    xmlns:th="http://www.thymeleaf.org" 
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+  <meta charset="UTF-8">
+  <title>Studentski portal - prijava | Prirodno-matematički fakultet - Univerzitet u Kragujevcu</title>
+  <link rel="stylesheet" href="/css/spectrum-icons.css" th:href="@{/css/spectrum-icons.css}">
+  <link rel="stylesheet" href="/css/spectrum-lightest.css" th:href="@{/css/spectrum-lightest.css}">
+  <link rel="stylesheet" href="/css/style.css" th:href="@{/css/style.css}">
+  <script src="/js/loadIcons.js"></script>
+  <script>
+    loadIcons('https://unpkg.com/@adobe/spectrum-css@2.15.1/dist/icons/spectrum-css-icons.svg');
+    loadIcons('https://unpkg.com/@adobe/spectrum-css@2.15.1/dist/icons/spectrum-icons.svg');
+  </script>
+</head>
+<body class="spectrum spectrum--lightest spectrum--medium">
+<div class="wrapper">
+  <div class="login-panel"></div>
+  <div class="spectrum-Toast spectrum-Toast--info" id="toast">
+  <svg class="spectrum-Icon spectrum-UIIcon-InfoMedium spectrum-Toast-typeIcon" focusable="false" aria-hidden="true">
+    <use xlink:href="#spectrum-css-icon-InfoMedium"></use>
+  </svg>
+  <div class="spectrum-Toast-body">
+    <div id="login-message" class="spectrum-Toast-content">Potvrdite svoj identitet.</div>
+  </div>
+  
+</div>
+<div class="container">
+  <h1 class="spectrum-Header1">Studentski portal</h1>
+  <p>Ne posedujete nalog? <a class="spectrum-Link">Kreirajte novi.</a></p>
+  <div class="credentials">
+  <input id="username" type="text" placeholder="Korisničko ime" name="field" value="" class="spectrum-Textfield">
+  <input id="password" type="password" placeholder="Lozinka" name="field" value="" class="spectrum-Textfield">
+  </div>
+<button onclick="Auth()" class="spectrum-Button spectrum-Button--cta">
+    <span class="spectrum-Button-label">Prijava</span>
+</button>
+  </div>
+</div>
+<script src="/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    background: url('https://lh3.ggpht.com/p/AF1QipOvyu00OcCeEwn5tBoMXjjdwZ8rND0ybAX44M_6=s1920') no-repeat center center fixed;
+}
+.wrapper {
+    position: absolute;
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.container {
+    display: table-cell;
+    vertical-align: middle;
+    clear: both;
+    overflow: hidden;
+}
+.login-panel {
+    background: url('https://lh3.ggpht.com/p/AF1QipOvyu00OcCeEwn5tBoMXjjdwZ8rND0ybAX44M_6=s1920') no-repeat center center fixed;
+    overflow : hidden;
+    filter: blur(13px);
+    width: 500px;
+    height: 500px;
+    border-radius: 16px;
+
+    float: right;
+    margin-right: 20%;
+}
+.logo > * {
+    float: left;
+    margin-left: 20%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.logo > h1 {
+    padding-bottom: 35px;
+    padding-left: 90px;
+}
+.logo > img {
+    height: 80px;
+}

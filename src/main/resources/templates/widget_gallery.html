@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+<html class="spectrum spectrum--medium spectrum--lightest">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/spectrum-lightest.css">
+    <link rel="stylesheet" href="../static/css/spectrum-icons.css">
+    <script src="../static/js/loadIcons.js"></script>
+    <script>
+        loadIcons('https://unpkg.com/@adobe/spectrum-css@2.15.1/dist/icons/spectrum-css-icons.svg');
+        loadIcons('https://unpkg.com/@adobe/spectrum-css@2.15.1/dist/icons/spectrum-icons.svg');
+    </script>
+</head>
+<body>
+<!-- WAI-ARIA 1.1: Accordion container role changed from "tablist" to "region" -->
+<h3 class="spectrum-heading3">Accordion</h3>
+<div class="spectrum-Accordion" role="region">
+    <div class="spectrum-Accordion-item is-open" role="presentation">
+
+        <!-- WAI-ARIA 1.1: Item header is a <button> wrapped within a <h3> element, rather than a <div> element with role="tab" -->
+        <h3 class="spectrum-Accordion-itemHeading">
+            <!-- WAI-ARIA 1.1: Item header <button> uses aria-expanded attribute to indicate expanded state. -->
+            <button class="spectrum-Accordion-itemHeader" type="button" id="spectrum-accordion-item-0-header" aria-controls="spectrum-accordion-item-0-content" aria-expanded="true">Recent</button>
+            <svg class="spectrum-Icon spectrum-UIIcon-ChevronRightMedium spectrum-Accordion-itemIndicator" focusable="false" aria-hidden="true">
+                <use xlink:href="#spectrum-css-icon-ChevronRightMedium" />
+            </svg>
+        </h3>
+
+        <!-- WAI-ARIA 1.1: Item content role changed from "tabpanel" to "region" -->
+        <div class="spectrum-Accordion-itemContent" role="region" id="spectrum-accordion-item-0-content" aria-labelledby="spectrum-accordion-item-0-header">Item 1</div>
+    </div>
+    <div class="spectrum-Accordion-item is-disabled" role="presentation">
+        <h3 class="spectrum-Accordion-itemHeading">
+            <button class="spectrum-Accordion-itemHeader" type="button" disabled id="spectrum-accordion-item-1-header" aria-controls="spectrum-accordion-item-1-content" aria-expanded="false">Architecture</button>
+            <svg class="spectrum-Icon spectrum-UIIcon-ChevronRightMedium spectrum-Accordion-itemIndicator" focusable="false" aria-hidden="true">
+                <use xlink:href="#spectrum-css-icon-ChevronRightMedium" />
+            </svg>
+        </h3>
+        <div class="spectrum-Accordion-itemContent" role="region" id="spectrum-accordion-item-1-content" aria-labelledby="spectrum-accordion-item-1-header">Item 2</div>
+    </div>
+    <div class="spectrum-Accordion-item" role="presentation">
+        <h3 class="spectrum-Accordion-itemHeading">
+            <button class="spectrum-Accordion-itemHeader" type="button" id="spectrum-accordion-item-2-header" aria-controls="spectrum-accordion-item-2-content" aria-expanded="false">Nature</button>
+            <svg class="spectrum-Icon spectrum-UIIcon-ChevronRightMedium spectrum-Accordion-itemIndicator" focusable="false" aria-hidden="true">
+                <use xlink:href="#spectrum-css-icon-ChevronRightMedium" />
+            </svg>
+        </h3>
+        <div class="spectrum-Accordion-itemContent" role="region" id="spectrum-accordion-item-2-content" aria-labelledby="spectrum-accordion-item-2-header">Item 3</div>
+    </div>
+    <div class="spectrum-Accordion-item" role="presentation">
+        <h3 class="spectrum-Accordion-itemHeading">
+            <button class="spectrum-Accordion-itemHeader" type="button" id="spectrum-accordion-item-3-header" aria-controls="spectrum-accordion-item-3-content" aria-expanded="false">Really Long Accordion Item According to Our Predictions</button>
+            <svg class="spectrum-Icon spectrum-UIIcon-ChevronRightMedium spectrum-Accordion-itemIndicator" focusable="false" aria-hidden="true">
+                <use xlink:href="#spectrum-css-icon-ChevronRightMedium" />
+            </svg>
+        </h3>
+        <div class="spectrum-Accordion-itemContent" role="region" id="spectrum-accordion-item-3-content" aria-labelledby="spectrum-accordion-item-3-header">Item 4</div>
+    </div>
+</div>
+<h3 class="spectrum-heading3">Action Bar</h3>
+<div class="spectrum-ActionBar is-open">
+    <div class="spectrum-Popover spectrum-ActionBar-popover is-open">
+        <label class="spectrum-Checkbox is-indeterminate">
+            <input type="checkbox" class="spectrum-Checkbox-input" id="checkbox-0">
+            <span class="spectrum-Checkbox-box">
+        <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+          <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+        </svg>
+        <svg class="spectrum-Icon spectrum-UIIcon-DashSmall spectrum-Checkbox-partialCheckmark" focusable="false" aria-hidden="true">
+          <use xlink:href="#spectrum-css-icon-DashSmall" />
+        </svg>
+      </span>
+            <span class="spectrum-Checkbox-label">2 Selected</span>
+        </label>
+        <div class="spectrum-ButtonGroup">
+            <button class="spectrum-ActionButton spectrum-ActionButton--quiet">
+                <span class="spectrum-ActionButton-label">Edit</span>
+            </button>
+            <button class="spectrum-ActionButton spectrum-ActionButton--quiet">
+                <span class="spectrum-ActionButton-label">Copy</span>
+            </button>
+            <button class="spectrum-ActionButton spectrum-ActionButton--quiet">
+                <span class="spectrum-ActionButton-label">Delete</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="spectrum-ActionBar is-open">
+    <div class="spectrum-Popover spectrum-ActionBar-popover is-open">
+        <label class="spectrum-Checkbox is-indeterminate">
+            <input type="checkbox" class="spectrum-Checkbox-input" id="checkbox-1">
+            <span class="spectrum-Checkbox-box">
+        <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+          <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+        </svg>
+        <svg class="spectrum-Icon spectrum-UIIcon-DashSmall spectrum-Checkbox-partialCheckmark" focusable="false" aria-hidden="true">
+          <use xlink:href="#spectrum-css-icon-DashSmall" />
+        </svg>
+      </span>
+            <span class="spectrum-Checkbox-label">4 Selected</span>
+        </label>
+        <div class="spectrum-ButtonGroup">
+            <button class="spectrum-ActionButton spectrum-ActionButton--quiet">
+                <svg class="spectrum-Icon spectrum-Icon--sizeS" focusable="false" aria-hidden="true" aria-label="Edit">
+                    <use xlink:href="#spectrum-icon-18-Edit"></use>
+                </svg>
+                <span class="spectrum-ActionButton-label">Edit</span>
+            </button>
+            <button class="spectrum-ActionButton spectrum-ActionButton--quiet">
+                <svg class="spectrum-Icon spectrum-Icon--sizeS" focusable="false" aria-hidden="true" aria-label="Copy">
+                    <use xlink:href="#spectrum-icon-18-Copy"></use>
+                </svg>
+                <span class="spectrum-ActionButton-label">Copy</span>
+            </button>
+            <button class="spectrum-ActionButton spectrum-ActionButton--quiet">
+                <svg class="spectrum-Icon spectrum-Icon--sizeS" focusable="false" aria-hidden="true" aria-label="Delete">
+                    <use xlink:href="#spectrum-icon-18-Delete"></use>
+                </svg>
+                <span class="spectrum-ActionButton-label">Delete</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="spectrum-ActionBar is-open">
+    <div class="spectrum-Popover spectrum-ActionBar-popover is-open">
+        <label class="spectrum-Checkbox is-indeterminate">
+            <input type="checkbox" class="spectrum-Checkbox-input" id="checkbox-1">
+            <span class="spectrum-Checkbox-box">
+        <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+          <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+        </svg>
+        <svg class="spectrum-Icon spectrum-UIIcon-DashSmall spectrum-Checkbox-partialCheckmark" focusable="false" aria-hidden="true">
+          <use xlink:href="#spectrum-css-icon-DashSmall" />
+        </svg>
+      </span>
+            <span class="spectrum-Checkbox-label">6 Selected</span>
+        </label>
+        <div class="spectrum-ButtonGroup">
+            <button class="spectrum-ActionButton spectrum-ActionButton--quiet">
+                <svg class="spectrum-Icon spectrum-Icon--sizeS" focusable="false" aria-hidden="true" aria-label="Edit">
+                    <use xlink:href="#spectrum-icon-18-Edit"></use>
+                </svg>
+            </button>
+            <button class="spectrum-ActionButton spectrum-ActionButton--quiet">
+                <svg class="spectrum-Icon spectrum-Icon--sizeS" focusable="false" aria-hidden="true" aria-label="Copy">
+                    <use xlink:href="#spectrum-icon-18-Copy"></use>
+                </svg>
+            </button>
+            <button class="spectrum-ActionButton spectrum-ActionButton--quiet">
+                <svg class="spectrum-Icon spectrum-Icon--sizeS" focusable="false" aria-hidden="true" aria-label="Delete">
+                    <use xlink:href="#spectrum-icon-18-Delete"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="spectrum-Table spectrum-Table--quiet" role="grid">
+    <div class="spectrum-Table-head" style="display: flex" role="row">
+        <div class="spectrum-Table-headCell spectrum-Table-checkboxCell" role="columnheader">
+            <label class="spectrum-Checkbox is-indeterminate">
+                <input type="checkbox" class="spectrum-Checkbox-input">
+                <span class="spectrum-Checkbox-box">
+          <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+            <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+          </svg>
+          <svg class="spectrum-Icon spectrum-UIIcon-DashSmall spectrum-Checkbox-partialCheckmark" focusable="false" aria-hidden="true">
+            <use xlink:href="#spectrum-css-icon-DashSmall" />
+          </svg>
+        </span>
+            </label>
+        </div>
+        <div class="spectrum-Table-headCell is-sortable is-sorted-desc" style="flex: 1" role="columnheader" aria-sort="descending" tabindex="0">
+            Column Title
+            <svg class="spectrum-Icon spectrum-UIIcon-ArrowDownSmall spectrum-Table-sortedIcon" focusable="false" aria-hidden="true">
+                <use xlink:href="#spectrum-css-icon-ArrowDownSmall" />
+            </svg>
+        </div>
+        <div class="spectrum-Table-headCell is-sortable" style="flex: 1" role="columnheader" aria-sort="none" tabindex="0">
+            Column Title
+            <svg class="spectrum-Icon spectrum-UIIcon-ArrowDownSmall spectrum-Table-sortedIcon" focusable="false" aria-hidden="true">
+                <use xlink:href="#spectrum-css-icon-ArrowDownSmall" />
+            </svg>
+        </div>
+        <div class="spectrum-Table-headCell" style="flex: 1" role="columnheader">Column Title</div>
+    </div>
+    <div class="spectrum-Table-body" style="height: 240px" role="rowgroup">
+        <div class="spectrum-Table-row" style="display: flex" role="row">
+            <div class="spectrum-Table-cell spectrum-Table-checkboxCell" style="padding-top: 8px; padding-bottom: 8px" role="gridcell">
+                <label class="spectrum-Checkbox spectrum-Table-checkbox">
+                    <input type="checkbox" class="spectrum-Checkbox-input" title="Select" checked>
+                    <span class="spectrum-Checkbox-box">
+            <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+              <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+            </svg>
+          </span>
+                </label>
+            </div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item Alpha</div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item Alpha</div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item Alpha</div>
+        </div>
+        <div class="spectrum-Table-row" style="display: flex" role="row">
+            <div class="spectrum-Table-cell spectrum-Table-checkboxCell" style="padding-top: 8px; padding-bottom: 8px" role="gridcell">
+                <label class="spectrum-Checkbox spectrum-Table-checkbox">
+                    <input type="checkbox" class="spectrum-Checkbox-input" title="Select" checked>
+                    <span class="spectrum-Checkbox-box">
+            <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+              <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+            </svg>
+          </span>
+                </label>
+            </div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item Bravo</div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item Bravo</div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item Bravo</div>
+        </div>
+        <div class="spectrum-Table-row" style="display: flex" role="row">
+            <div class="spectrum-Table-cell spectrum-Table-checkboxCell" style="padding-top: 8px; padding-bottom: 8px" role="gridcell">
+                <label class="spectrum-Checkbox spectrum-Table-checkbox">
+                    <input type="checkbox" class="spectrum-Checkbox-input" title="Select" checked>
+                    <span class="spectrum-Checkbox-box">
+            <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+              <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+            </svg>
+          </span>
+                </label>
+            </div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item Charlie</div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item Charlie</div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item Charlie</div>
+        </div>
+        <div class="spectrum-Table-row" style="display: flex" role="row">
+            <div class="spectrum-Table-cell spectrum-Table-checkboxCell" style="padding-top: 8px; padding-bottom: 8px" role="gridcell">
+                <label class="spectrum-Checkbox spectrum-Table-checkbox">
+                    <input type="checkbox" class="spectrum-Checkbox-input" title="Select">
+                    <span class="spectrum-Checkbox-box">
+            <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+              <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+            </svg>
+          </span>
+                </label>
+            </div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item Delta</div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item Delta</div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item Delta</div>
+        </div>
+        <div class="spectrum-Table-row" style="display: flex" role="row">
+            <div class="spectrum-Table-cell spectrum-Table-checkboxCell" style="padding-top: 8px; padding-bottom: 8px" role="gridcell">
+                <label class="spectrum-Checkbox spectrum-Table-checkbox">
+                    <input type="checkbox" class="spectrum-Checkbox-input" title="Select" checked>
+                    <span class="spectrum-Checkbox-box">
+            <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+              <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+            </svg>
+          </span>
+                </label>
+            </div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item Echo</div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item Echo</div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item Echo</div>
+        </div>
+        <div class="spectrum-Table-row" style="display: flex" role="row">
+            <div class="spectrum-Table-cell spectrum-Table-checkboxCell" style="padding-top: 8px; padding-bottom: 8px" role="gridcell">
+                <label class="spectrum-Checkbox spectrum-Table-checkbox">
+                    <input type="checkbox" class="spectrum-Checkbox-input" title="Select">
+                    <span class="spectrum-Checkbox-box">
+            <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+              <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+            </svg>
+          </span>
+                </label>
+            </div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item Frank</div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item Frank</div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item Frank</div>
+        </div>
+        <div class="spectrum-Table-row" style="display: flex" role="row">
+            <div class="spectrum-Table-cell spectrum-Table-checkboxCell" style="padding-top: 8px; padding-bottom: 8px" role="gridcell">
+                <label class="spectrum-Checkbox spectrum-Table-checkbox">
+                    <input type="checkbox" class="spectrum-Checkbox-input" title="Select">
+                    <span class="spectrum-Checkbox-box">
+            <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+              <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+            </svg>
+          </span>
+                </label>
+            </div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item George</div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item George</div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item George</div>
+        </div>
+        <div class="spectrum-Table-row" style="display: flex" role="row">
+            <div class="spectrum-Table-cell spectrum-Table-checkboxCell" style="padding-top: 8px; padding-bottom: 8px" role="gridcell">
+                <label class="spectrum-Checkbox spectrum-Table-checkbox">
+                    <input type="checkbox" class="spectrum-Checkbox-input" title="Select">
+                    <span class="spectrum-Checkbox-box">
+            <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+              <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+            </svg>
+          </span>
+                </label>
+            </div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item Henry</div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item Henry</div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item Henry</div>
+        </div>
+        <div class="spectrum-Table-row" style="display: flex" role="row">
+            <div class="spectrum-Table-cell spectrum-Table-checkboxCell" style="padding-top: 8px; padding-bottom: 8px" role="gridcell">
+                <label class="spectrum-Checkbox spectrum-Table-checkbox">
+                    <input type="checkbox" class="spectrum-Checkbox-input" title="Select">
+                    <span class="spectrum-Checkbox-box">
+            <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+              <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+            </svg>
+          </span>
+                </label>
+            </div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item Jake</div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item Jake</div>
+            <div class="spectrum-Table-cell" style="flex: 1" role="gridcell">Row Item Jake</div>
+        </div>
+        <div class="spectrum-ActionBar spectrum-ActionBar--sticky is-open">
+            <div class="spectrum-Popover spectrum-ActionBar-popover is-open">
+                <label class="spectrum-Checkbox is-indeterminate">
+                    <input type="checkbox" class="spectrum-Checkbox-input">
+                    <span class="spectrum-Checkbox-box">
+            <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+              <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+            </svg>
+            <svg class="spectrum-Icon spectrum-UIIcon-DashSmall spectrum-Checkbox-partialCheckmark" focusable="false" aria-hidden="true">
+              <use xlink:href="#spectrum-css-icon-DashSmall" />
+            </svg>
+          </span>
+                    <span class="spectrum-Checkbox-label">4 Selected</span>
+                </label>
+                <div class="spectrum-ButtonGroup">
+                    <button class="spectrum-ActionButton spectrum-ActionButton--quiet">
+                        <svg class="spectrum-Icon spectrum-Icon--sizeS" focusable="false" aria-hidden="true" aria-label="Edit">
+                            <use xlink:href="#spectrum-icon-18-Edit"></use>
+                        </svg>
+                        <span class="spectrum-ActionButton-label">Edit</span>
+                    </button>
+                    <button class="spectrum-ActionButton spectrum-ActionButton--quiet">
+                        <svg class="spectrum-Icon spectrum-Icon--sizeS" focusable="false" aria-hidden="true" aria-label="Copy">
+                            <use xlink:href="#spectrum-icon-18-Copy"></use>
+                        </svg>
+                        <span class="spectrum-ActionButton-label">Copy</span>
+                    </button>
+                    <button class="spectrum-ActionButton spectrum-ActionButton--quiet">
+                        <svg class="spectrum-Icon spectrum-Icon--sizeS" focusable="false" aria-hidden="true" aria-label="Delete">
+                            <use xlink:href="#spectrum-icon-18-Delete"></use>
+                        </svg>
+                        <span class="spectrum-ActionButton-label">Delete</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h3 class="spectrum-heading3">Action Button (FIX HOVER)</h3>
+<button class="spectrum-ActionButton">
+    <span class="spectrum-ActionButton-label">Edit</span>
+</button>
+<button class="spectrum-ActionButton is-selected">
+    <span class="spectrum-ActionButton-label">Edit</span>
+</button>
+<button class="spectrum-ActionButton" disabled>
+    <span class="spectrum-ActionButton-label">Edit</span>
+</button>
+<button class="spectrum-ActionButton is-selected" disabled>
+    <span class="spectrum-ActionButton-label">Edit</span>
+</button>
+
+<br><br>
+
+<button class="spectrum-ActionButton">
+    <svg class="spectrum-Icon spectrum-Icon--sizeS spectrum-WORKFLOWIcon-Edit" focusable="false" aria-hidden="true" aria-label="Edit">
+        <use xlink:href="#spectrum-icon-18-Edit" />
+    </svg>
+    <span class="spectrum-ActionButton-label">Edit</span>
+</button>
+<button class="spectrum-ActionButton is-selected">
+    <svg class="spectrum-Icon spectrum-Icon--sizeS spectrum-WORKFLOWIcon-Edit" focusable="false" aria-hidden="true" aria-label="Edit">
+        <use xlink:href="#spectrum-icon-18-Edit" />
+    </svg>
+    <span class="spectrum-ActionButton-label">Edit</span>
+</button>
+<button class="spectrum-ActionButton" disabled>
+    <svg class="spectrum-Icon spectrum-Icon--sizeS spectrum-WORKFLOWIcon-Edit" focusable="false" aria-hidden="true" aria-label="Edit">
+        <use xlink:href="#spectrum-icon-18-Edit" />
+    </svg>
+    <span class="spectrum-ActionButton-label">Edit</span>
+</button>
+<button class="spectrum-ActionButton is-selected" disabled>
+    <svg class="spectrum-Icon spectrum-Icon--sizeS spectrum-WORKFLOWIcon-Edit" focusable="false" aria-hidden="true" aria-label="Edit">
+        <use xlink:href="#spectrum-icon-18-Edit" />
+    </svg>
+    <span class="spectrum-ActionButton-label">Edit</span>
+</button>
+
+<br><br>
+
+<button class="spectrum-ActionButton">
+    <svg class="spectrum-Icon spectrum-Icon--sizeS" focusable="false" aria-hidden="true" aria-label="Edit">
+        <use xlink:href="#spectrum-icon-18-Edit" />
+    </svg>
+    <svg class="spectrum-Icon spectrum-UIIcon-CornerTriangle spectrum-ActionButton-hold" focusable="false" aria-hidden="true">
+        <use xlink:href="#spectrum-css-icon-CornerTriangle" />
+    </svg>
+</button>
+<button class="spectrum-ActionButton is-selected">
+    <svg class="spectrum-Icon spectrum-Icon--sizeS" focusable="false" aria-hidden="true" aria-label="Edit">
+        <use xlink:href="#spectrum-icon-18-Edit" />
+    </svg>
+    <svg class="spectrum-Icon spectrum-UIIcon-CornerTriangle spectrum-ActionButton-hold" focusable="false" aria-hidden="true">
+        <use xlink:href="#spectrum-css-icon-CornerTriangle" />
+    </svg>
+</button>
+<button class="spectrum-ActionButton" disabled>
+    <svg class="spectrum-Icon spectrum-Icon--sizeS" focusable="false" aria-hidden="true" aria-label="Edit">
+        <use xlink:href="#spectrum-icon-18-Edit" />
+    </svg>
+    <svg class="spectrum-Icon spectrum-UIIcon-CornerTriangle spectrum-ActionButton-hold" focusable="false" aria-hidden="true">
+        <use xlink:href="#spectrum-css-icon-CornerTriangle" />
+    </svg>
+</button>
+<button class="spectrum-ActionButton is-selected" disabled>
+    <svg class="spectrum-Icon spectrum-Icon--sizeS" focusable="false" aria-hidden="true" aria-label="Edit">
+        <use xlink:href="#spectrum-icon-18-Edit" />
+    </svg>
+    <svg class="spectrum-Icon spectrum-UIIcon-CornerTriangle spectrum-ActionButton-hold" focusable="false" aria-hidden="true">
+        <use xlink:href="#spectrum-css-icon-CornerTriangle" />
+    </svg>
+</button>
+
+<br><br>
+
+<button class="spectrum-ActionButton">
+    <div class="spectrum-Icon spectrum-Icon--sizeS spectrum-WORKFLOWIcon-Calendar"></div>
+    <span class="spectrum-ActionButton-label">Button</span>
+</button>
+
+<button class="spectrum-ActionButton is-selected">
+    <div class="spectrum-Icon spectrum-Icon--sizeS spectrum-WORKFLOWIcon-Calendar"></div>
+    <span class="spectrum-ActionButton-label">Button</span>
+</button>
+
+<button class="spectrum-ActionButton" disabled>
+    <div class="spectrum-Icon spectrum-Icon--sizeS spectrum-WORKFLOWIcon-Calendar"></div>
+    <span class="spectrum-ActionButton-label">Button</span>
+</button>
+
+
+<button class="spectrum-ActionButton is-selected" disabled>
+    <div class="spectrum-Icon spectrum-Icon--sizeS spectrum-WORKFLOWIcon-Calendar"></div>
+    <span class="spectrum-ActionButton-label">Button</span>
+</button>
+<h3 class="spectrum-heading3">Action Menu</h3>
+
+<button class="spectrum-ActionButton spectrum-ActionButton--quiet"> <!--is-selected-->
+    <div class="spectrum-Icon spectrum-Icon--sizeS spectrum-WORKFLOWIcon-MoreSmallList" focusable="true" aria-hidden="true">
+        <use xlink:href="#spectrum-icon-18-More" />
+    </div>
+    <span class="spectrum-ActionButton-label">More Actions</span>
+</button>
+
+<div class="dummy-spacing"></div>
+
+<div class="spectrum-Popover spectrum-Popover--bottom is-open">
+    <ul class="spectrum-Menu" role="menu">
+        <li class="spectrum-Menu-item" role="menuitem" tabindex="0">
+            <span class="spectrum-Menu-itemLabel">Action 1</span>
+        </li>
+        <li class="spectrum-Menu-item" role="menuitem" tabindex="0">
+            <span class="spectrum-Menu-itemLabel">Action 2</span>
+        </li>
+        <li class="spectrum-Menu-item" role="menuitem" tabindex="0">
+            <span class="spectrum-Menu-itemLabel">Action 3</span>
+        </li>
+        <li class="spectrum-Menu-item" role="menuitem" tabindex="0">
+            <span class="spectrum-Menu-itemLabel">Action 4</span>
+        </li>
+    </ul>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h3 class="spectrum-heading3">Alerts</h3>
+<div class="spectrum-Alert spectrum-Alert--info">
+    <svg class="spectrum-Icon spectrum-UIIcon-InfoMedium spectrum-Alert-icon" focusable="false" aria-hidden="true">
+        <use xlink:href="#spectrum-css-icon-InfoMedium" />
+    </svg>
+    <div class="spectrum-Alert-header">Information Alert Header</div>
+    <div class="spectrum-Alert-content">This is an alert.</div>
+</div>
+<div class="spectrum-Alert spectrum-Alert--success">
+    <svg class="spectrum-Icon spectrum-UIIcon-SuccessMedium spectrum-Alert-icon" focusable="false" aria-hidden="true">
+        <use xlink:href="#spectrum-css-icon-SuccessMedium" />
+    </svg>
+    <div class="spectrum-Alert-header">Successful Alert Header</div>
+    <div class="spectrum-Alert-content">This is an alert.</div>
+</div>
+<div class="spectrum-Alert spectrum-Alert--warning">
+    <svg class="spectrum-Icon spectrum-UIIcon-AlertMedium spectrum-Alert-icon" focusable="false" aria-hidden="true">
+        <use xlink:href="#spectrum-css-icon-AlertMedium" />
+    </svg>
+    <div class="spectrum-Alert-header">Warning Alert Header</div>
+    <div class="spectrum-Alert-content">This is an alert.</div>
+</div>
+<div class="spectrum-Alert spectrum-Alert--help">
+    <svg class="spectrum-Icon spectrum-UIIcon-HelpMedium spectrum-Alert-icon" focusable="false" aria-hidden="true">
+        <use xlink:href="#spectrum-css-icon-HelpMedium" />
+    </svg>
+    <div class="spectrum-Alert-header">Information Alert Header</div>
+    <div class="spectrum-Alert-content">This is an alert.</div>
+</div>
+<div class="spectrum-Alert spectrum-Alert--error">
+    <svg class="spectrum-Icon spectrum-UIIcon-AlertMedium spectrum-Alert-icon" focusable="false" aria-hidden="true">
+        <use xlink:href="#spectrum-css-icon-AlertMedium" />
+    </svg>
+    <div class="spectrum-Alert-header">Error Alert - Oh no</div>
+    <div class="spectrum-Alert-content">This is an alert.</div>
+</div>
+<div class="spectrum-Alert spectrum-Alert--error">
+    <svg class="spectrum-Icon spectrum-UIIcon-AlertMedium spectrum-Alert-icon" focusable="false" aria-hidden="true">
+        <use xlink:href="#spectrum-css-icon-AlertMedium" />
+    </svg>
+    <div class="spectrum-Alert-header">Incorrect Payment Information - Error</div>
+    <div class="spectrum-Alert-content">This is an alert.</div>
+    <div class="spectrum-Alert-footer">
+        <button class="spectrum-Button spectrum-Button--primary spectrum-Button--quiet">Close</button>
+    </div>
+</div>
+
+<h3 class="spectrum-heading3">Asset List</h3>
+<ul class="spectrum-AssetList">
+    <li class="spectrum-AssetList-item is-selectable" tabindex="0">
+        <label class="spectrum-Checkbox spectrum-AssetList-itemSelector">
+            <input type="checkbox" class="spectrum-Checkbox-input" id="checkbox-2" tabindex="-1">
+            <span class="spectrum-Checkbox-box">
+        <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+          <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+        </svg>
+      </span>
+        </label>
+        <svg class="spectrum-Icon spectrum-Icon--sizeM spectrum-AssetList-itemThumbnail spectrum-WORKFLOWIcon-FileCSV" focusable="false" aria-hidden="true" aria-label="FileCSV">
+            <use xlink:href="#spectrum-icon-24-FileCSV"></use>
+        </svg>
+        <span class="spectrum-AssetList-itemLabel">Resource Allocation.csv</span>
+        <svg class="spectrum-Icon spectrum-UIIcon-ChevronRightMedium spectrum-AssetList-itemChildIndicator" focusable="false" aria-hidden="true">
+            <use xlink:href="#spectrum-css-icon-ChevronRightMedium" />
+        </svg>
+    </li>
+    <li class="spectrum-AssetList-item is-branch is-selectable is-selected" tabindex="0">
+        <label class="spectrum-Checkbox spectrum-AssetList-itemSelector">
+            <input type="checkbox" class="spectrum-Checkbox-input" id="checkbox-1" tabindex="-1" checked>
+            <span class="spectrum-Checkbox-box">
+        <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+          <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+        </svg>
+      </span>
+        </label>
+        <svg class="spectrum-Icon spectrum-Icon--sizeM spectrum-AssetList-itemThumbnail spectrum-WORKFLOWIcon-Folder" focusable="false" aria-hidden="true" aria-label="Folder">
+            <use xlink:href="#spectrum-icon-24-Folder"></use>
+        </svg>
+        <span class="spectrum-AssetList-itemLabel">Frontend Projects</span>
+        <svg class="spectrum-Icon spectrum-UIIcon-ChevronRightMedium spectrum-AssetList-itemChildIndicator" focusable="false" aria-hidden="true">
+            <use xlink:href="#spectrum-css-icon-ChevronRightMedium" />
+        </svg>
+    </li>
+</ul>
+<br>
+<h3 class="spectrum-heading3">Bar Loaders</h3>
+<div style="width: 200px; height: 25px; padding-top: 10px;">
+    <div class="spectrum-BarLoader" value="50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        <div class="spectrum-BarLoader-track">
+            <div class="spectrum-BarLoader-fill" style="width: 50%;"></div><!--MODIFY-->
+        </div>
+        <div class="spectrum-BarLoader-label" hidden=""></div>
+    </div>
+</div>
+
+<div style="width: 200px; height: 25px; padding-top: 10px;">
+    <div class="spectrum-BarLoader spectrum-BarLoader--small" value="50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        <div class="spectrum-BarLoader-track">
+            <div class="spectrum-BarLoader-fill" style="width: 50%;"></div>
+        </div>
+        <div class="spectrum-BarLoader-label" hidden=""></div>
+    </div>
+</div>
+
+<div style="margin: 20px 0;">
+    <div class="spectrum-BarLoader" value="50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        <div class="spectrum-BarLoader-label">Loading</div>
+        <div class="spectrum-BarLoader-percentage">50%</div>
+        <div class="spectrum-BarLoader-track">
+            <div class="spectrum-BarLoader-fill" style="width: 50%;"></div>
+        </div>
+    </div>
+</div>
+
+<div style="margin: 20px 0;">
+    <div class="spectrum-BarLoader spectrum-BarLoader--small" value="50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        <div class="spectrum-BarLoader-label">Loading</div>
+        <div class="spectrum-BarLoader-percentage">50%</div>
+        <div class="spectrum-BarLoader-track">
+            <div class="spectrum-BarLoader-fill" style="width: 50%;"></div>
+        </div>
+    </div>
+</div>
+
+<div style="margin: 50px 0;">
+    <div class="spectrum-BarLoader spectrum-BarLoader--small spectrum-BarLoader--sideLabel" value="50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        <div class="spectrum-BarLoader-label">Loading</div>
+        <div class="spectrum-BarLoader-percentage">50%</div>
+        <div class="spectrum-BarLoader-track">
+            <div class="spectrum-BarLoader-fill" style="width: 50%;"></div>
+        </div>
+    </div>
+</div>
+
+<div style="margin: 20px 0;">
+    <div class="spectrum-BarLoader spectrum-BarLoader--sideLabel" value="50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        <div class="spectrum-BarLoader-label">Loading</div>
+        <div class="spectrum-BarLoader-percentage">50%</div>
+        <div class="spectrum-BarLoader-track">
+            <div class="spectrum-BarLoader-fill" style="width: 50%;"></div>
+        </div>
+    </div>
+</div>
+<div style="width: 200px; height: 25px; padding-top: 10px;">
+    <div class="spectrum-BarLoader spectrum-BarLoader--indeterminate">
+        <div class="spectrum-BarLoader-track">
+            <div class="spectrum-BarLoader-fill"></div>
+        </div>
+        <div class="spectrum-BarLoader-label" hidden=""></div>
+    </div>
+</div>
+
+<div style="width: 200px; height: 25px; padding-top: 10px;">
+    <div class="spectrum-BarLoader spectrum-BarLoader--small spectrum-BarLoader--indeterminate">
+        <div class="spectrum-BarLoader-track">
+            <div class="spectrum-BarLoader-fill"></div>
+        </div>
+        <div class="spectrum-BarLoader-label" hidden=""></div>
+    </div>
+</div>
+
+<div style="margin: 20px 0;">
+    <div class="spectrum-BarLoader spectrum-BarLoader--indeterminate">
+        <div class="spectrum-BarLoader-label">Loading</div>
+        <div class="spectrum-BarLoader-track">
+            <div class="spectrum-BarLoader-fill"></div>
+        </div>
+    </div>
+</div>
+
+<div style="margin: 20px 0;">
+    <div class="spectrum-BarLoader spectrum-BarLoader--small spectrum-BarLoader--indeterminate">
+        <div class="spectrum-BarLoader-label">Loading</div>
+        <div class="spectrum-BarLoader-track">
+            <div class="spectrum-BarLoader-fill"></div>
+        </div>
+    </div>
+</div>
+<br>
+<h3 class="spectrum-heading3">Breadcrumbs</h3>
+<nav>
+    <ul class="spectrum-Breadcrumbs">
+        <li class="spectrum-Breadcrumbs-item">
+            <div class="spectrum-Breadcrumbs-itemLink" role="link" tabindex="0">Nav Root</div>
+            <svg class="spectrum-Icon spectrum-UIIcon-ChevronRightSmall spectrum-Breadcrumbs-itemSeparator" focusable="false" aria-hidden="true">
+                <use xlink:href="#spectrum-css-icon-ChevronRightSmall" />
+            </svg>
+        </li>
+        <li class="spectrum-Breadcrumbs-item">
+            <div class="spectrum-Breadcrumbs-itemLink" role="link" tabindex="0">Trend</div>
+            <svg class="spectrum-Icon spectrum-UIIcon-ChevronRightSmall spectrum-Breadcrumbs-itemSeparator" focusable="false" aria-hidden="true">
+                <use xlink:href="#spectrum-css-icon-ChevronRightSmall" />
+            </svg>
+        </li>
+        <li class="spectrum-Breadcrumbs-item">
+            <a class="spectrum-Breadcrumbs-itemLink" role="link" aria-current="page">January 2019 Assets</a>
+        </li>
+    </ul>
+</nav>
+<br>
+<h3 class="spectrum-heading3">Button - CTA</h3>
+<button class="spectrum-Button spectrum-Button--cta">
+    <span class="spectrum-Button-label">Button</span>
+</button>
+<button class="spectrum-Button spectrum-Button--cta" disabled>
+    <span class="spectrum-Button-label">Button</span>
+</button>
+<br>
+<h3 class="spectrum-heading3">Button - Primary</h3>
+<button class="spectrum-Button spectrum-Button--primary">
+    <span class="spectrum-Button-label">Button</span>
+</button>
+
+<button class="spectrum-Button spectrum-Button--primary" disabled>
+    <span class="spectrum-Button-label">Button</span>
+</button>
+
+<br><br>
+
+<a role="button" href="#" class="spectrum-Button spectrum-Button--primary">
+    <span class="spectrum-Button-label">Button</span>
+</a>
+
+<a role="button" class="spectrum-Button spectrum-Button--primary is-disabled">
+    <span class="spectrum-Button-label">Button</span>
+</a>
+
+<br><br>
+
+<button class="spectrum-Button spectrum-Button--primary">
+    <svg class="spectrum-Icon spectrum-Icon--sizeS spectrum-WORKFLOWIcon-Edit" focusable="false" aria-hidden="true" aria-label="Edit">
+    </svg>
+    <span class="spectrum-Button-label">Edit</span>
+</button>
+
+<button class="spectrum-Button spectrum-Button--primary" disabled>
+    <svg class="spectrum-Icon spectrum-Icon--sizeS spectrum-WORKFLOWIcon-Edit" focusable="false" aria-hidden="true" aria-label="Edit">
+    </svg>
+    <span class="spectrum-Button-label">Edit</span>
+</button>
+
+<br><br>
+
+<a class="spectrum-Button spectrum-Button--primary">
+    <svg class="spectrum-Icon spectrum-Icon--sizeS spectrum-WORKFLOWIcon-Edit" focusable="false" aria-hidden="true" aria-label="Edit">
+    </svg>
+    <span class="spectrum-Button-label">Edit</span>
+</a>
+
+<a class="spectrum-Button spectrum-Button--primary is-disabled">
+    <svg class="spectrum-Icon spectrum-Icon--sizeS spectrum-WORKFLOWIcon-Edit" focusable="false" aria-hidden="true" aria-label="Edit">
+    </svg>
+    <span class="spectrum-Button-label">Edit</span>
+</a>
+<br>
+<h3 class="spectrum-heading3">Button - Secondary</h3>
+<button class="spectrum-Button spectrum-Button--secondary">
+    <span class="spectrum-Button-label">Button</span>
+</button>
+
+<button class="spectrum-Button spectrum-Button--secondary" disabled>
+    <span class="spectrum-Button-label">Button</span>
+</button>
+<br>
+<h3 class="spectrum-heading3">Button - Secondary (Warning)</h3>
+<button class="spectrum-Button spectrum-Button--warning">
+    <span class="spectrum-Button-label">Button</span>
+</button>
+
+<button class="spectrum-Button spectrum-Button--warning" disabled>
+    <span class="spectrum-Button-label">Button</span>
+</button>
+
+<br>
+
+<h3 class="spectrum-heading3">Calendar</h3>
+<div class="spectrum-Calendar">
+    <div class="spectrum-Calendar-header">
+        <div class="spectrum-Calendar-title" role="heading" aria-live="assertive" aria-atomic="true">August 2017</div>
+        <button aria-label="Previous" title="Previous" class="spectrum-ActionButton spectrum-ActionButton--quiet spectrum-Calendar-prevMonth">
+            <svg class="spectrum-Icon spectrum-UIIcon-ChevronLeftLarge" focusable="false" aria-hidden="true">
+                <use xlink:href="#spectrum-css-icon-ChevronLeftLarge" />
+            </svg>
+        </button>
+        <button aria-label="Next" title="Next" class="spectrum-ActionButton spectrum-ActionButton--quiet spectrum-Calendar-nextMonth">
+            <svg class="spectrum-Icon spectrum-UIIcon-ChevronRightLarge" focusable="false" aria-hidden="true">
+                <use xlink:href="#spectrum-css-icon-ChevronRightLarge" />
+            </svg>
+        </button>
+    </div>
+    <div class="spectrum-Calendar-body" role="grid" tabindex="0" aria-readonly="true" aria-disabled="false">
+        <table role="presentation" class="spectrum-Calendar-table">
+            <thead role="presentation">
+            <tr role="row">
+                <th role="columnheader" scope="col" class="spectrum-Calendar-tableCell"><abbr class="spectrum-Calendar-dayOfWeek" title="Sunday">S</abbr></th>
+                <th role="columnheader" scope="col" class="spectrum-Calendar-tableCell"><abbr class="spectrum-Calendar-dayOfWeek" title="Monday">M</abbr></th>
+                <th role="columnheader" scope="col" class="spectrum-Calendar-tableCell"><abbr class="spectrum-Calendar-dayOfWeek" title="Tuesday">T</abbr></th>
+                <th role="columnheader" scope="col" class="spectrum-Calendar-tableCell"><abbr class="spectrum-Calendar-dayOfWeek" title="Wednesday">W</abbr></th>
+                <th role="columnheader" scope="col" class="spectrum-Calendar-tableCell"><abbr class="spectrum-Calendar-dayOfWeek" title="Thursday">T</abbr></th>
+                <th role="columnheader" scope="col" class="spectrum-Calendar-tableCell"><abbr class="spectrum-Calendar-dayOfWeek" title="Friday">F</abbr></th>
+                <th role="columnheader" scope="col" class="spectrum-Calendar-tableCell"><abbr class="spectrum-Calendar-dayOfWeek" title="Saturday">S</abbr></th>
+            </tr>
+            </thead>
+            <tbody role="presentation">
+            <tr role="row">
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Sunday, July 30, 2017"><span role="presentation" class="spectrum-Calendar-date is-outsideMonth">30</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Monday, July 31, 2017"><span role="presentation" class="spectrum-Calendar-date is-outsideMonth">31</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Tuesday, August 1, 2017"><span role="presentation" class="spectrum-Calendar-date">1</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Today, Wednesday, August 2, 2017 selected"><span role="presentation" class="spectrum-Calendar-date">2</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Thursday, August 3, 2017"><span role="presentation" class="spectrum-Calendar-date">3</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Friday, August 4, 2017"><span role="presentation" class="spectrum-Calendar-date">4</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Saturday, August 5, 2017"><span role="presentation" class="spectrum-Calendar-date">5</span></td>
+            </tr>
+            <tr role="row">
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Sunday, August 6, 2017"><span role="presentation" class="spectrum-Calendar-date">6</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Monday, August 7, 2017"><span role="presentation" class="spectrum-Calendar-date">7</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Tuesday, August 8, 2017"><span role="presentation" class="spectrum-Calendar-date is-selected is-range-selection is-selection-start">8</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Wednesday, August 9, 2017"><span role="presentation" class="spectrum-Calendar-date is-selected is-range-selection">9</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="true" aria-invalid="false" title="Thursday, August 10, 2017"><span role="presentation" class="spectrum-Calendar-date is-selected is-range-selection">10</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="true" aria-invalid="false" title="Friday, August 11, 2017"><span role="presentation" class="spectrum-Calendar-date is-selected is-range-selection is-today">11</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="true" aria-invalid="false" title="Saturday, August 12, 2017"><span role="presentation" class="spectrum-Calendar-date is-selected is-range-selection is-range-end">12</span></td>
+            </tr>
+            <tr role="row">
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="true" aria-invalid="false" title="Sunday, August 13, 2017"><span role="presentation" class="spectrum-Calendar-date is-selected is-range-selection is-range-start">13</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="true" aria-invalid="false" title="Monday, August 14, 2017"><span role="presentation" class="spectrum-Calendar-date is-selected is-range-selection is-selection-end">14</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Tuesday, August 15, 2017"><span role="presentation" class="spectrum-Calendar-date">15</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Wednesday, August 16, 2017"><span role="presentation" class="spectrum-Calendar-date">16</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Thursday, August 17, 2017"><span role="presentation" class="spectrum-Calendar-date">17</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Friday, August 18, 2017"><span role="presentation" class="spectrum-Calendar-date">18</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Saturday, August 19, 2017"><span role="presentation" class="spectrum-Calendar-date">19</span></td>
+            </tr>
+            <tr role="row">
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Sunday, August 20, 2017"><span role="presentation" class="spectrum-Calendar-date">20</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Monday, August 21, 2017"><span role="presentation" class="spectrum-Calendar-date">21</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Tuesday, August 22, 2017"><span role="presentation" class="spectrum-Calendar-date">22</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Wednesday, August 23, 2017"><span role="presentation" class="spectrum-Calendar-date">23</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Thursday, August 24, 2017"><span role="presentation" class="spectrum-Calendar-date">24</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Friday, August 25, 2017"><span role="presentation" class="spectrum-Calendar-date">25</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Saturday, August 26, 2017"><span role="presentation" class="spectrum-Calendar-date">26</span></td>
+            </tr>
+            <tr role="row">
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Sunday, August 27, 2017"><span role="presentation" class="spectrum-Calendar-date">27</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Monday, August 28, 2017"><span role="presentation" class="spectrum-Calendar-date">28</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Tuesday, August 29, 2017"><span role="presentation" class="spectrum-Calendar-date">29</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Wednesday, August 30, 2017"><span role="presentation" class="spectrum-Calendar-date">30</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" tabindex="-1" aria-disabled="false" aria-selected="false" aria-invalid="false" title="Thursday, August 31, 2017"><span role="presentation" class="spectrum-Calendar-date">31</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Friday, September 1, 2017"><span role="presentation" class="spectrum-Calendar-date is-outsideMonth">1</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Saturday, September 2, 2017"><span role="presentation" class="spectrum-Calendar-date is-outsideMonth">2</span></td>
+            </tr>
+            <tr role="row">
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Sunday, September 3, 2017"><span role="presentation" class="spectrum-Calendar-date is-outsideMonth">3</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Monday, September 4, 2017"><span role="presentation" class="spectrum-Calendar-date is-outsideMonth">4</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Tuesday, September 5, 2017"><span role="presentation" class="spectrum-Calendar-date is-outsideMonth">5</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Wednesday, September 6, 2017"><span role="presentation" class="spectrum-Calendar-date is-outsideMonth">6</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Thursday, September 7, 2017"><span role="presentation" class="spectrum-Calendar-date is-outsideMonth">7</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Friday, September 8, 2017"><span role="presentation" class="spectrum-Calendar-date is-outsideMonth">8</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Saturday, September 9, 2017"><span role="presentation" class="spectrum-Calendar-date is-outsideMonth">9</span></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<br>
+<h3 class="spectrum-heading3">Calendar Disabled</h3>
+<div class="spectrum-Calendar">
+    <div class="spectrum-Calendar-header">
+        <div class="spectrum-Calendar-title" role="heading" aria-live="assertive" aria-atomic="true">August 2017</div>
+        <button aria-label="Previous" title="Previous" class="spectrum-ActionButton spectrum-ActionButton--quiet spectrum-Calendar-prevMonth" disabled>
+            <svg class="spectrum-Icon spectrum-UIIcon-ChevronLeftLarge" focusable="false" aria-hidden="true">
+                <use xlink:href="#spectrum-css-icon-ChevronLeftLarge" />
+            </svg>
+        </button>
+        <button aria-label="Next" title="Next" class="spectrum-ActionButton spectrum-ActionButton--quiet spectrum-Calendar-nextMonth" disabled>
+            <svg class="spectrum-Icon spectrum-UIIcon-ChevronRightLarge" focusable="false" aria-hidden="true">
+                <use xlink:href="#spectrum-css-icon-ChevronRightLarge" />
+            </svg>
+        </button>
+    </div>
+    <div class="spectrum-Calendar-body" role="grid" aria-readonly="true" aria-disabled="true">
+        <table role="presentation" class="spectrum-Calendar-table">
+            <thead role="presentation">
+            <tr role="row">
+                <th role="columnheader" scope="col" class="spectrum-Calendar-tableCell"><abbr class="spectrum-Calendar-dayOfWeek" title="Sunday">S</abbr></th>
+                <th role="columnheader" scope="col" class="spectrum-Calendar-tableCell"><abbr class="spectrum-Calendar-dayOfWeek" title="Monday">M</abbr></th>
+                <th role="columnheader" scope="col" class="spectrum-Calendar-tableCell"><abbr class="spectrum-Calendar-dayOfWeek" title="Tuesday">T</abbr></th>
+                <th role="columnheader" scope="col" class="spectrum-Calendar-tableCell"><abbr class="spectrum-Calendar-dayOfWeek" title="Wednesday">W</abbr></th>
+                <th role="columnheader" scope="col" class="spectrum-Calendar-tableCell"><abbr class="spectrum-Calendar-dayOfWeek" title="Thursday">T</abbr></th>
+                <th role="columnheader" scope="col" class="spectrum-Calendar-tableCell"><abbr class="spectrum-Calendar-dayOfWeek" title="Friday">F</abbr></th>
+                <th role="columnheader" scope="col" class="spectrum-Calendar-tableCell"><abbr class="spectrum-Calendar-dayOfWeek" title="Saturday">S</abbr></th>
+            </tr>
+            </thead>
+            <tbody role="presentation">
+            <tr role="row">
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Sunday, July 30, 2017"><span role="presentation" class="spectrum-Calendar-date is-outsideMonth">30</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Monday, July 31, 2017"><span role="presentation" class="spectrum-Calendar-date is-outsideMonth">31</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Tuesday, August 1, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">1</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="true" aria-invalid="false" title="Today, Wednesday, August 2, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">2</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Thursday, August 3, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">3</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Friday, August 4, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">4</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Saturday, August 5, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">5</span></td>
+            </tr>
+            <tr role="row">
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Sunday, August 6, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">6</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Monday, August 7, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">7</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Tuesday, August 8, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">8</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Wednesday, August 9, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled is-today">9</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Thursday, August 10, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">10</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Friday, August 11, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">11</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Saturday, August 12, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">12</span></td>
+            </tr>
+            <tr role="row">
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Sunday, August 13, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">13</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Monday, August 14, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">14</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Tuesday, August 15, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">15</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Wednesday, August 16, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">16</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Thursday, August 17, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">17</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Friday, August 18, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">18</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Saturday, August 19, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">19</span></td>
+            </tr>
+            <tr role="row">
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Sunday, August 20, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">20</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Monday, August 21, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">21</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Tuesday, August 22, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">22</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Wednesday, August 23, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">23</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Thursday, August 24, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">24</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Friday, August 25, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">25</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Saturday, August 26, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">26</span></td>
+            </tr>
+            <tr role="row">
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Sunday, August 27, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">27</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Monday, August 28, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">28</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Tuesday, August 29, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">29</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Wednesday, August 30, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">30</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Thursday, August 31, 2017"><span role="presentation" class="spectrum-Calendar-date is-disabled">31</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Friday, September 1, 2017"><span role="presentation" class="spectrum-Calendar-date is-outsideMonth">1</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Saturday, September 2, 2017"><span role="presentation" class="spectrum-Calendar-date is-outsideMonth">2</span></td>
+            </tr>
+            <tr role="row">
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Sunday, September 3, 2017"><span role="presentation" class="spectrum-Calendar-date is-outsideMonth">3</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Monday, September 4, 2017"><span role="presentation" class="spectrum-Calendar-date is-outsideMonth">4</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Tuesday, September 5, 2017"><span role="presentation" class="spectrum-Calendar-date is-outsideMonth">5</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Wednesday, September 6, 2017"><span role="presentation" class="spectrum-Calendar-date is-outsideMonth">6</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Thursday, September 7, 2017"><span role="presentation" class="spectrum-Calendar-date is-outsideMonth">7</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Friday, September 8, 2017"><span role="presentation" class="spectrum-Calendar-date is-outsideMonth">8</span></td>
+                <td role="gridcell" class="spectrum-Calendar-tableCell" aria-disabled="true" aria-selected="false" aria-invalid="false" title="Saturday, September 9, 2017"><span role="presentation" class="spectrum-Calendar-date is-outsideMonth">9</span></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<br>
+<h3 class="spectrum-heading3">Checkbox</h3>
+<label class="spectrum-Checkbox">
+    <input type="checkbox" class="spectrum-Checkbox-input" id="checkbox-0">
+    <span class="spectrum-Checkbox-box">
+    <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+      <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+    </svg>
+    <svg class="spectrum-Icon spectrum-UIIcon-DashSmall spectrum-Checkbox-partialCheckmark" focusable="false" aria-hidden="true">
+      <use xlink:href="#spectrum-css-icon-DashSmall" />
+    </svg>
+  </span>
+    <span class="spectrum-Checkbox-label">Checkbox</span>
+</label>
+<label class="spectrum-Checkbox">
+    <input type="checkbox" class="spectrum-Checkbox-input" id="checkbox-1" checked>
+    <span class="spectrum-Checkbox-box">
+    <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+      <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+    </svg>
+    <svg class="spectrum-Icon spectrum-UIIcon-DashSmall spectrum-Checkbox-partialCheckmark" focusable="false" aria-hidden="true">
+      <use xlink:href="#spectrum-css-icon-DashSmall" />
+    </svg>
+  </span>
+    <span class="spectrum-Checkbox-label">Checkbox</span>
+</label>
+<label class="spectrum-Checkbox is-indeterminate">
+    <input type="checkbox" class="spectrum-Checkbox-input" id="checkbox-2">
+    <span class="spectrum-Checkbox-box">
+    <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+      <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+    </svg>
+    <svg class="spectrum-Icon spectrum-UIIcon-DashSmall spectrum-Checkbox-partialCheckmark" focusable="false" aria-hidden="true">
+      <use xlink:href="#spectrum-css-icon-DashSmall" />
+    </svg>
+  </span>
+    <span class="spectrum-Checkbox-label">Checkbox</span>
+</label>
+<br>
+<label class="spectrum-Checkbox">
+    <input type="checkbox" class="spectrum-Checkbox-input" id="checkbox-0">
+    <span class="spectrum-Checkbox-box">
+    <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+      <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+    </svg>
+    <svg class="spectrum-Icon spectrum-UIIcon-DashSmall spectrum-Checkbox-partialCheckmark" focusable="false" aria-hidden="true">
+      <use xlink:href="#spectrum-css-icon-DashSmall" />
+    </svg>
+  </span>
+    <span class="spectrum-Checkbox-label">Checkbox with an extraordinarily long label please don't do this but if you did it should truncate text when it gets longer than the container which contains the checkbox which has an unacceptably long label</span>
+</label>
+<label class="spectrum-Checkbox is-disabled">
+    <input type="checkbox" class="spectrum-Checkbox-input" id="checkbox-3" disabled>
+    <span class="spectrum-Checkbox-box">
+    <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+      <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+    </svg>
+    <svg class="spectrum-Icon spectrum-UIIcon-DashSmall spectrum-Checkbox-partialCheckmark" focusable="false" aria-hidden="true">
+      <use xlink:href="#spectrum-css-icon-DashSmall" />
+    </svg>
+  </span>
+    <span class="spectrum-Checkbox-label">Checkbox</span>
+</label>
+<label class="spectrum-Checkbox is-disabled">
+    <input type="checkbox" class="spectrum-Checkbox-input" id="checkbox-4" disabled checked>
+    <span class="spectrum-Checkbox-box">
+    <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+      <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+    </svg>
+    <svg class="spectrum-Icon spectrum-UIIcon-DashSmall spectrum-Checkbox-partialCheckmark" focusable="false" aria-hidden="true">
+      <use xlink:href="#spectrum-css-icon-DashSmall" />
+    </svg>
+  </span>
+    <span class="spectrum-Checkbox-label">Checkbox</span>
+</label>
+<label class="spectrum-Checkbox is-disabled is-indeterminate">
+    <input type="checkbox" class="spectrum-Checkbox-input" id="checkbox-5" disabled>
+    <span class="spectrum-Checkbox-box">
+    <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+      <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+    </svg>
+    <svg class="spectrum-Icon spectrum-UIIcon-DashSmall spectrum-Checkbox-partialCheckmark" focusable="false" aria-hidden="true">
+      <use xlink:href="#spectrum-css-icon-DashSmall" />
+    </svg>
+  </span>
+    <span class="spectrum-Checkbox-label">Checkbox</span>
+</label>
+<br>
+<h3 class="spectrum-heading3">Circle loader</h3>
+<div style="width: 250px; height: 150px; display: flex; align-items: center; justify-content: space-around;" id="standard-loaders">
+    <div class="spectrum-CircleLoader spectrum-CircleLoader--small">
+        <div class="spectrum-CircleLoader-track"></div>
+        <div class="spectrum-CircleLoader-fills">
+            <div class="spectrum-CircleLoader-fillMask1">
+                <div class="spectrum-CircleLoader-fillSubMask1">
+
+                    <!--
+                    <div class="spectrum-CircleLoader-fillSubMask1" style="transform: rotate(-79.2deg);">
+          <div class="spectrum-CircleLoader-fill"></div>
+        </div>
+                    -->
+
+                    <div class="spectrum-CircleLoader-fill"></div>
+                </div>
+            </div>
+            <div class="spectrum-CircleLoader-fillMask2">
+                <div class="spectrum-CircleLoader-fillSubMask2">
+                    <div class="spectrum-CircleLoader-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="spectrum-CircleLoader">
+        <div class="spectrum-CircleLoader-track"></div>
+        <div class="spectrum-CircleLoader-fills">
+            <div class="spectrum-CircleLoader-fillMask1">
+                <div class="spectrum-CircleLoader-fillSubMask1">
+                    <div class="spectrum-CircleLoader-fill"></div>
+                </div>
+            </div>
+            <div class="spectrum-CircleLoader-fillMask2">
+                <div class="spectrum-CircleLoader-fillSubMask2">
+                    <div class="spectrum-CircleLoader-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="spectrum-CircleLoader spectrum-CircleLoader--large">
+        <div class="spectrum-CircleLoader-track"></div>
+        <div class="spectrum-CircleLoader-fills">
+            <div class="spectrum-CircleLoader-fillMask1">
+                <div class="spectrum-CircleLoader-fillSubMask1">
+                    <div class="spectrum-CircleLoader-fill"></div>
+                </div>
+            </div>
+            <div class="spectrum-CircleLoader-fillMask2">
+                <div class="spectrum-CircleLoader-fillSubMask2">
+                    <div class="spectrum-CircleLoader-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="width: 250px; height: 150px; display: flex; align-items: center; justify-content: space-around;">
+    <div class="spectrum-CircleLoader spectrum-CircleLoader--indeterminate spectrum-CircleLoader--small">
+        <div class="spectrum-CircleLoader-track"></div>
+        <div class="spectrum-CircleLoader-fills">
+            <div class="spectrum-CircleLoader-fillMask1">
+                <div class="spectrum-CircleLoader-fillSubMask1">
+                    <div class="spectrum-CircleLoader-fill"></div>
+                </div>
+            </div>
+            <div class="spectrum-CircleLoader-fillMask2">
+                <div class="spectrum-CircleLoader-fillSubMask2">
+                    <div class="spectrum-CircleLoader-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="spectrum-CircleLoader spectrum-CircleLoader--indeterminate">
+        <div class="spectrum-CircleLoader-track"></div>
+        <div class="spectrum-CircleLoader-fills">
+            <div class="spectrum-CircleLoader-fillMask1">
+                <div class="spectrum-CircleLoader-fillSubMask1">
+                    <div class="spectrum-CircleLoader-fill"></div>
+                </div>
+            </div>
+            <div class="spectrum-CircleLoader-fillMask2">
+                <div class="spectrum-CircleLoader-fillSubMask2">
+                    <div class="spectrum-CircleLoader-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="spectrum-CircleLoader spectrum-CircleLoader--indeterminate spectrum-CircleLoader--large">
+        <div class="spectrum-CircleLoader-track"></div>
+        <div class="spectrum-CircleLoader-fills">
+            <div class="spectrum-CircleLoader-fillMask1">
+                <div class="spectrum-CircleLoader-fillSubMask1">
+                    <div class="spectrum-CircleLoader-fill"></div>
+                </div>
+            </div>
+            <div class="spectrum-CircleLoader-fillMask2">
+                <div class="spectrum-CircleLoader-fillSubMask2">
+                    <div class="spectrum-CircleLoader-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<h3 class="spectrum-heading3">Combobox</h3>
+<h4>Default</h4>
+<div class="spectrum-InputGroup">
+    <input type="text" placeholder="Type here" name="field" value="" class="spectrum-Textfield spectrum-InputGroup-field">
+    <button class="spectrum-FieldButton spectrum-InputGroup-button" aria-haspopup="true">
+        <svg class="spectrum-Icon spectrum-UIIcon-ChevronDownMedium spectrum-InputGroup-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#spectrum-css-icon-ChevronDownMedium" />
+        </svg>
+    </button>
+</div>
+
+<h4>Open</h4>
+<div class="spectrum-InputGroup is-open">
+    <input type="text" placeholder="Type here" name="field" value="" class="spectrum-Textfield spectrum-InputGroup-field">
+    <button class="spectrum-FieldButton spectrum-InputGroup-button is-selected" aria-haspopup="true">
+        <svg class="spectrum-Icon spectrum-UIIcon-ChevronDownMedium spectrum-InputGroup-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#spectrum-css-icon-ChevronDownMedium" />
+        </svg>
+    </button>
+    <div class="spectrum-Popover spectrum-Popover--bottom is-open" style="position: absolute; top: 100%; left: 0; width: 100%">
+        <ul class="spectrum-Menu" role="listbox">
+            <li class="spectrum-Menu-item is-selected" role="option" tabindex="0">
+                <span class="spectrum-Menu-itemLabel">Ballard</span>
+            </li>
+            <li class="spectrum-Menu-item" role="option" tabindex="0">
+                <span class="spectrum-Menu-itemLabel">Fremont</span>
+            </li>
+            <li class="spectrum-Menu-item" role="option" tabindex="0">
+                <span class="spectrum-Menu-itemLabel">Greenwood</span>
+            </li>
+            <li class="spectrum-Menu-divider" role="separator"></li>
+            <li class="spectrum-Menu-item is-disabled" role="option" aria-disabled="true">
+                <span class="spectrum-Menu-itemLabel">United States of America</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<br><br><br><br>
+<br><br><br><br>
+
+<h4>Disabled</h4>
+<div class="spectrum-InputGroup is-disabled">
+    <input type="text" placeholder="Type here" name="field" value="" class="spectrum-Textfield spectrum-InputGroup-field" disabled>
+    <button class="spectrum-FieldButton spectrum-InputGroup-button" aria-haspopup="true" disabled>
+        <svg class="spectrum-Icon spectrum-UIIcon-ChevronDownMedium spectrum-InputGroup-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#spectrum-css-icon-ChevronDownMedium" />
+        </svg>
+    </button>
+</div>
+
+<h4>Invalid</h4>
+<div class="spectrum-InputGroup is-invalid">
+    <input type="text" placeholder="Type here" name="field" value="" class="spectrum-Textfield spectrum-InputGroup-field is-invalid">
+    <button class="spectrum-FieldButton spectrum-InputGroup-button is-invalid" aria-haspopup="true">
+        <svg class="spectrum-Icon spectrum-UIIcon-ChevronDownMedium spectrum-InputGroup-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#spectrum-css-icon-ChevronDownMedium" />
+        </svg>
+    </button>
+</div>
+<br>
+<h3 class="spectrum-heading3">Date Picker</h3>
+<div aria-disabled="false" aria-invalid="false" class="spectrum-InputGroup spectrum-Datepicker" aria-readonly="false" aria-required="false" aria-haspopup="true">
+    <input type="text" class="spectrum-Textfield spectrum-InputGroup-field" aria-invalid="false" placeholder="Choose a date" value="">
+    <button type="button" class="spectrum-FieldButton spectrum-InputGroup-button">
+        <svg viewBox="0 0 36 36" focusable="false" aria-hidden="true" role="img" class="spectrum-Icon spectrum-Icon--sizeS">
+            <path d="M33 6h-5V3a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3H10V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v3H1a1 1 0 0 0-1 1v26a1 1 0 0 0 1 1h32a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-1 26H2V8h4v1a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V8h14v1a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V8h4z">
+            </path>
+            <path d="M6 12h4v4H6zm6 0h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zM6 18h4v4H6zm6 0h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zM6 24h4v4H6zm6 0h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4z">
+            </path>
+        </svg>
+    </button>
+</div>
+<br>
+<br>
+<h3 class="spectrum-heading3">Textfield</h3>
+<label for="DecoratedTextField-single" class="spectrum-FieldLabel">Search</label>
+<div class="spectrum-DecoratedTextfield is-decorated">
+    <input id="DecoratedTextField-single" placeholder="Enter your name" class="spectrum-Textfield spectrum-DecoratedTextfield-field" aria-invalid="false" type="text">
+
+    <svg class="spectrum-Icon spectrum-UIIcon-AlertMedium spectrum-Icon--sizeS spectrum-DecoratedTextfield-icon" focusable="false" aria-hidden="true">
+        <use xlink:href="#spectrum-css-icon-AlertMedium" />
+    </svg>
+</div>
+<br>
+<h3 class="spectrum-heading3">Dialog</h3>
+<h4>Medium</h4>
+<button class="spectrum-Button spectrum-Button--overBackground spectrum-CSSExample-overlayShowButton" onclick="openDialog(this.nextElementSibling)">Open Medium Dialog</button>
+
+<!-- spectrum-CSSExample-dialog class is included for demo purposes only -->
+<div class="spectrum-Dialog spectrum-Dialog--medium is-open spectrum-CSSExample-dialog">
+    <div class="spectrum-Dialog-header">
+        <h2 class="spectrum-Dialog-title">Disclaimer</h2>
+    </div>
+    <div class="spectrum-Dialog-content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor augue mauris augue neque gravida. Libero volutpat sed ornare arcu. Quisque egestas diam in arcu cursus euismod quis viverra. Posuere ac ut consequat semper viverra nam libero justo laoreet. Enim ut tellus elementum sagittis vitae et leo duis ut. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Diam volutpat commodo sed egestas egestas. Dolor magna eget est lorem ipsum dolor. Vitae suscipit tellus mauris a diam maecenas sed. Turpis in eu mi bibendum neque egestas congue. Rhoncus est pellentesque elit ullamcorper dignissim cras lobortis.
+    </div>
+</div>
+<h4>Medium (dismissable)</h4>
+<button class="spectrum-Button spectrum-Button--overBackground spectrum-CSSExample-overlayShowButton" onclick="openDialog(this.nextElementSibling)">Open Dismissible Dialog</button>
+
+<!-- spectrum-CSSExample-dialog class is included for demo purposes only -->
+<div class="spectrum-Dialog spectrum-Dialog--medium spectrum-Dialog--dismissible is-open spectrum-CSSExample-dialog">
+    <div class="spectrum-Dialog-header">
+        <h2 class="spectrum-Dialog-title">Disclaimer</h2>
+        <button class="spectrum-ActionButton spectrum-ActionButton--quiet spectrum-Dialog-closeButton" onclick="closeDialog(this.closest('.spectrum-Dialog'))">
+            <svg class="spectrum-Icon spectrum-UIIcon-CrossLarge" focusable="false" aria-hidden="true">
+                <use xlink:href="#spectrum-css-icon-CrossLarge" />
+            </svg>
+        </button>
+    </div>
+    <div class="spectrum-Dialog-content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor augue mauris augue neque gravida. Libero volutpat sed ornare arcu. Quisque egestas diam in arcu cursus euismod quis viverra. Posuere ac ut consequat semper viverra nam libero justo laoreet. Enim ut tellus elementum sagittis vitae et leo duis ut. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Diam volutpat commodo sed egestas egestas. Dolor magna eget est lorem ipsum dolor. Vitae suscipit tellus mauris a diam maecenas sed. Turpis in eu mi bibendum neque egestas congue. Rhoncus est pellentesque elit ullamcorper dignissim cras lobortis.
+    </div>
+</div>
+<h4>Dialog - hero</h4>
+<button class="spectrum-Button spectrum-Button--overBackground spectrum-CSSExample-overlayShowButton" onclick="openDialog(this.nextElementSibling)">Open Hero Dialog</button>
+
+<!-- spectrum-CSSExample-dialog class is included for demo purposes only -->
+<div class="spectrum-Dialog spectrum-Dialog--medium spectrum-Dialog--dismissible spectrum-Dialog--noDivider is-open spectrum-CSSExample-dialog">
+    <div class="spectrum-Dialog-hero" style="background-image: url(/spectrum-css/static/images/example-card-portrait.jpg)"></div>
+    <div class="spectrum-Dialog-header">
+        <h2 class="spectrum-Dialog-title">Disclaimer</h2>
+        <button class="spectrum-ActionButton spectrum-ActionButton--quiet spectrum-Dialog-closeButton" onclick="closeDialog(this.closest('.spectrum-Dialog'))">
+            <svg class="spectrum-Icon spectrum-UIIcon-CrossLarge" focusable="false" aria-hidden="true">
+                <use xlink:href="#spectrum-css-icon-CrossLarge" />
+            </svg>
+        </button>
+    </div>
+    <div class="spectrum-Dialog-content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor augue mauris augue neque gravida. Libero volutpat sed ornare arcu. Quisque egestas diam in arcu cursus euismod quis viverra. Posuere ac ut consequat semper viverra nam libero justo laoreet. Enim ut tellus elementum sagittis vitae et leo duis ut. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Diam volutpat commodo sed egestas egestas. Dolor magna eget est lorem ipsum dolor. Vitae suscipit tellus mauris a diam maecenas sed. Turpis in eu mi bibendum neque egestas congue. Rhoncus est pellentesque elit ullamcorper dignissim cras lobortis.
+    </div>
+</div>
+<h4>Dialog - Alert Confirmation</h4>
+<button class="spectrum-Button spectrum-Button--overBackground spectrum-CSSExample-overlayShowButton" onclick="openDialog(this.nextElementSibling)">Open Configuration Dialog</button>
+
+<!-- spectrum-CSSExample-dialog class is included for demo purposes only -->
+<div class="spectrum-Dialog spectrum-Dialog--alert is-open spectrum-CSSExample-dialog">
+    <div class="spectrum-Dialog-header">
+        <h2 class="spectrum-Dialog-title">Enable Smart Filters?</h2>
+    </div>
+    <div class="spectrum-Dialog-content">
+        Smart filters are nondestructive and will preserve your original images.
+    </div>
+    <div class="spectrum-Dialog-footer">
+        <button class="spectrum-Button spectrum-Button--secondary" onclick="closeDialog(this.closest('.spectrum-Dialog'))">Cancel</button>
+        <button class="spectrum-Button spectrum-Button--cta" onclick="closeDialog(this.closest('.spectrum-Dialog'))">Enable</button>
+    </div>
+</div>
+<h4>Dialog - Alert Destructive</h4>
+<button class="spectrum-Button spectrum-Button--overBackground spectrum-CSSExample-overlayShowButton" onclick="openDialog(this.nextElementSibling)">Open Destructive Dialog</button>
+
+<!-- spectrum-CSSExample-dialog class is included for demo purposes only -->
+<div class="spectrum-Dialog spectrum-Dialog--alert is-open spectrum-CSSExample-dialog">
+    <div class="spectrum-Dialog-header">
+        <h2 class="spectrum-Dialog-title">Delete 3 Documents</h2>
+    </div>
+    <div class="spectrum-Dialog-content">
+        Are you sure you want to delete the 3 selected documents?
+    </div>
+    <div class="spectrum-Dialog-footer">
+        <button class="spectrum-Button spectrum-Button--secondary" onclick="closeDialog(this.closest('.spectrum-Dialog'))">Cancel</button>
+        <button class="spectrum-Button spectrum-Button--warning" onclick="closeDialog(this.closest('.spectrum-Dialog'))">Delete</button>
+    </div>
+</div>
+<br>
+<h4>Dialog - Alert Error</h4>
+<button class="spectrum-Button spectrum-Button--overBackground spectrum-CSSExample-overlayShowButton" onclick="openDialog(this.nextElementSibling)">Open Error Dialog</button>
+
+<!-- spectrum-CSSExample-dialog class is included for demo purposes only -->
+<div class="spectrum-Dialog spectrum-Dialog--error spectrum-Dialog--alert is-open spectrum-CSSExample-dialog">
+    <div class="spectrum-Dialog-header">
+        <h2 class="spectrum-Dialog-title">Unable to Share</h2>
+        <svg class="spectrum-Icon spectrum-UIIcon-AlertMedium spectrum-Dialog-typeIcon" focusable="false" aria-hidden="true">
+            <use xlink:href="#spectrum-css-icon-AlertMedium" />
+        </svg>
+    </div>
+    <div class="spectrum-Dialog-content">
+        An error occurred while sharing your project. Please verify the email address and try again.
+    </div>
+    <div class="spectrum-Dialog-footer">
+        <button class="spectrum-Button spectrum-Button--primary" onclick="closeDialog(this.closest('.spectrum-Dialog'))">OK</button>
+    </div>
+</div>
+<h3 class="spectrum-heading3">Dropdown</h3>
+<h4>Closed</h4>
+<div class="spectrum-Dropdown" style="width: 240px;">
+    <button class="spectrum-FieldButton spectrum-Dropdown-trigger" aria-haspopup="listbox">
+        <span class="spectrum-Dropdown-label is-placeholder">Select a Country with a very long label, too long in fact</span>
+        <svg class="spectrum-Icon spectrum-UIIcon-ChevronDownMedium spectrum-Dropdown-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#spectrum-css-icon-ChevronDownMedium" />
+        </svg>
+    </button>
+</div>
+
+<h4>Open</h4>
+<div class="spectrum-Dropdown is-open" style="width: 240px;">
+    <button class="spectrum-FieldButton spectrum-Dropdown-trigger is-selected" aria-haspopup="listbox">
+        <span class="spectrum-Dropdown-label">Donaudampfschifffahrtsgesellschaftskapitän</span>
+        <svg class="spectrum-Icon spectrum-UIIcon-ChevronDownMedium spectrum-Dropdown-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#spectrum-css-icon-ChevronDownMedium" />
+        </svg>
+    </button>
+    <div class="spectrum-Popover spectrum-Popover--bottom spectrum-Dropdown-popover is-open" style="width: 100%">
+        <ul class="spectrum-Menu" role="listbox">
+            <li class="spectrum-Menu-item is-selected" role="option" aria-selected="true" tabindex="0">
+                <span class="spectrum-Menu-itemLabel">Donaudampfschifffahrtsgesellschaftskapitän</span>
+                <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkMedium spectrum-Menu-checkmark spectrum-Menu-itemIcon" focusable="false" aria-hidden="true">
+                    <use xlink:href="#spectrum-css-icon-CheckmarkMedium" />
+                </svg>
+            </li>
+            <li class="spectrum-Menu-item" role="option" tabindex="0">
+                <span class="spectrum-Menu-itemLabel">Some long value that should be cut off</span>
+                <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkMedium spectrum-Menu-checkmark spectrum-Menu-itemIcon" focusable="false" aria-hidden="true">
+                    <use xlink:href="#spectrum-css-icon-CheckmarkMedium" />
+                </svg>
+            </li>
+            <li class="spectrum-Menu-item" role="option" tabindex="0">
+                <span class="spectrum-Menu-itemLabel">Very long text with hyphens-between-words</span>
+                <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkMedium spectrum-Menu-checkmark spectrum-Menu-itemIcon" focusable="false" aria-hidden="true">
+                    <use xlink:href="#spectrum-css-icon-CheckmarkMedium" />
+                </svg>
+            </li>
+            <li class="spectrum-Menu-divider" role="separator"></li>
+            <li class="spectrum-Menu-item is-disabled" role="option" aria-disabled="true">
+                <span class="spectrum-Menu-itemLabel">United States of America</span>
+                <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkMedium spectrum-Menu-checkmark spectrum-Menu-itemIcon" focusable="false" aria-hidden="true">
+                    <use xlink:href="#spectrum-css-icon-CheckmarkMedium" />
+                </svg>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
+<h4>With Thumbnails</h4>
+<div class="spectrum-Dropdown is-open" style="width: 240px;">
+    <button class="spectrum-FieldButton spectrum-Dropdown-trigger is-selected" aria-haspopup="listbox">
+        <svg class="spectrum-Icon spectrum-Icon--sizeS" focusable="false" aria-hidden="true" aria-label="Image">
+            <use xlink:href="#spectrum-icon-18-Image" />
+        </svg>
+        <span class="spectrum-Dropdown-label">Donaudampfschifffahrtsgesellschaftskapitän</span>
+        <svg class="spectrum-Icon spectrum-UIIcon-ChevronDownMedium spectrum-Dropdown-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#spectrum-css-icon-ChevronDownMedium" />
+        </svg>
+    </button>
+    <div class="spectrum-Popover spectrum-Popover--bottom spectrum-Dropdown-popover is-open" style="width: 100%">
+        <ul class="spectrum-Menu" role="listbox">
+            <li class="spectrum-Menu-item is-selected" role="option" aria-selected="true" tabindex="0">
+                <svg class="spectrum-Icon spectrum-Icon--sizeS spectrum-Menu-itemIcon" focusable="false" aria-hidden="true" aria-label="Image">
+                    <use xlink:href="#spectrum-icon-18-Image" />
+                </svg>
+                <span class="spectrum-Menu-itemLabel">Donaudampfschifffahrtsgesellschaftskapitän</span>
+                <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkMedium spectrum-Menu-checkmark spectrum-Menu-itemIcon" focusable="false" aria-hidden="true">
+                    <use xlink:href="#spectrum-css-icon-CheckmarkMedium" />
+                </svg>
+            </li>
+            <li class="spectrum-Menu-item" role="option" tabindex="0">
+                <svg class="spectrum-Icon spectrum-Icon--sizeS spectrum-Menu-itemIcon" focusable="false" aria-hidden="true" aria-label="Image">
+                    <use xlink:href="#spectrum-icon-18-Image" />
+                </svg>
+                <span class="spectrum-Menu-itemLabel">Some long value that should be cut off</span>
+                <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkMedium spectrum-Menu-checkmark spectrum-Menu-itemIcon" focusable="false" aria-hidden="true">
+                    <use xlink:href="#spectrum-css-icon-CheckmarkMedium" />
+                </svg>
+            </li>
+            <li class="spectrum-Menu-item" role="option" tabindex="0">
+                <svg class="spectrum-Icon spectrum-Icon--sizeS spectrum-Menu-itemIcon" focusable="false" aria-hidden="true" aria-label="Image">
+                    <use xlink:href="#spectrum-icon-18-Image" />
+                </svg>
+                <span class="spectrum-Menu-itemLabel">Very long text with hyphens-between-words</span>
+                <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkMedium spectrum-Menu-checkmark spectrum-Menu-itemIcon" focusable="false" aria-hidden="true">
+                    <use xlink:href="#spectrum-css-icon-CheckmarkMedium" />
+                </svg>
+            </li>
+            <li class="spectrum-Menu-divider" role="separator"></li>
+            <li class="spectrum-Menu-item is-disabled" role="option" aria-disabled="true">
+                <svg class="spectrum-Icon spectrum-Icon--sizeS spectrum-Menu-itemIcon" focusable="false" aria-hidden="true" aria-label="Image">
+                    <use xlink:href="#spectrum-icon-18-Image" />
+                </svg>
+                <span class="spectrum-Menu-itemLabel">United States of America</span>
+                <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkMedium spectrum-Menu-checkmark spectrum-Menu-itemIcon" focusable="false" aria-hidden="true">
+                    <use xlink:href="#spectrum-css-icon-CheckmarkMedium" />
+                </svg>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
+<h4>Disabled</h4>
+<div class="spectrum-Dropdown is-disabled" style="width: 240px;">
+    <button class="spectrum-FieldButton spectrum-Dropdown-trigger" disabled aria-haspopup="listbox">
+        <span class="spectrum-Dropdown-label is-placeholder">Select a Country</span>
+        <svg class="spectrum-Icon spectrum-UIIcon-ChevronDownMedium spectrum-Dropdown-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#spectrum-css-icon-ChevronDownMedium" />
+        </svg>
+    </button>
+</div>
+
+<h4>Closed</h4>
+<div class="spectrum-Dropdown is-invalid" style="width: 240px;">
+    <button class="spectrum-FieldButton spectrum-Dropdown-trigger is-invalid" aria-haspopup="listbox">
+        <span class="spectrum-Dropdown-label is-placeholder">Select a Country</span>
+        <svg class="spectrum-Icon spectrum-Icon--sizeS" focusable="false" aria-hidden="true" aria-label="Folder">
+            <use xlink:href="#spectrum-icon-18-Alert" />
+        </svg>
+        <svg class="spectrum-Icon spectrum-UIIcon-ChevronDownMedium spectrum-Dropdown-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#spectrum-css-icon-ChevronDownMedium" />
+        </svg>
+    </button>
+</div>
+
+<h4>Open</h4>
+<div class="spectrum-Dropdown is-open is-invalid" style="width: 240px;">
+    <button class="spectrum-FieldButton spectrum-Dropdown-trigger is-invalid is-selected" aria-haspopup="listbox">
+        <span class="spectrum-Dropdown-label">Ballard</span>
+        <svg class="spectrum-Icon spectrum-Icon--sizeS" focusable="false" aria-hidden="true" aria-label="Folder">
+            <use xlink:href="#spectrum-icon-18-Alert" />
+        </svg>
+        <svg class="spectrum-Icon spectrum-UIIcon-ChevronDownMedium spectrum-Dropdown-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#spectrum-css-icon-ChevronDownMedium" />
+        </svg>
+    </button>
+    <div class="spectrum-Popover spectrum-Popover--bottom spectrum-Dropdown-popover is-open" style="width: 100%">
+        <ul class="spectrum-Menu" role="listbox">
+            <li class="spectrum-Menu-item is-selected" role="option" aria-selected="true" tabindex="0">
+                <span class="spectrum-Menu-itemLabel">Ballard</span>
+                <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkMedium spectrum-Menu-checkmark spectrum-Menu-itemIcon" focusable="false" aria-hidden="true">
+                    <use xlink:href="#spectrum-css-icon-CheckmarkMedium" />
+                </svg>
+            </li>
+            <li class="spectrum-Menu-item" role="option" tabindex="0">
+                <span class="spectrum-Menu-itemLabel">Fremont</span>
+                <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkMedium spectrum-Menu-checkmark spectrum-Menu-itemIcon" focusable="false" aria-hidden="true">
+                    <use xlink:href="#spectrum-css-icon-CheckmarkMedium" />
+                </svg>
+            </li>
+            <li class="spectrum-Menu-item" role="option" tabindex="0">
+                <span class="spectrum-Menu-itemLabel">Greenwood</span>
+                <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkMedium spectrum-Menu-checkmark spectrum-Menu-itemIcon" focusable="false" aria-hidden="true">
+                    <use xlink:href="#spectrum-css-icon-CheckmarkMedium" />
+                </svg>
+            </li>
+            <li class="spectrum-Menu-divider" role="separator"></li>
+            <li class="spectrum-Menu-item is-disabled" role="option" aria-disabled="true">
+                <span class="spectrum-Menu-itemLabel">United States of America</span>
+                <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkMedium spectrum-Menu-checkmark spectrum-Menu-itemIcon" focusable="false" aria-hidden="true">
+                    <use xlink:href="#spectrum-css-icon-CheckmarkMedium" />
+                </svg>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
+<h4>Disabled</h4>
+<div class="spectrum-Dropdown is-invalid is-disabled" style="width: 240px;">
+    <button class="spectrum-FieldButton spectrum-Dropdown-trigger is-invalid" disabled aria-haspopup="listbox">
+        <span class="spectrum-Dropdown-label is-placeholder">Select a Country</span>
+        <svg class="spectrum-Icon spectrum-Icon--sizeS" focusable="false" aria-hidden="true" aria-label="Folder">
+            <use xlink:href="#spectrum-icon-18-Alert" />
+        </svg>
+        <svg class="spectrum-Icon spectrum-UIIcon-ChevronDownMedium spectrum-Dropdown-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#spectrum-css-icon-ChevronDownMedium" />
+        </svg>
+    </button>
+</div>
+
+<br>
+
+<h3 class="spectrum-heading3">Field group</h3>
+<div class="spectrum-FieldGroup">
+    <div class="spectrum-Radio">
+        <input type="radio" name="pets" class="spectrum-Radio-input" id="radio-0">
+        <span class="spectrum-Radio-button"></span>
+        <label class="spectrum-Radio-label" for="radio-0">Kittens</label>
+    </div>
+    <div class="spectrum-Radio">
+        <input type="radio" name="pets" class="spectrum-Radio-input" id="radio-1">
+        <span class="spectrum-Radio-button"></span>
+        <label class="spectrum-Radio-label" for="radio-1">Dogs</label>
+    </div>
+</div>
+<div class="spectrum-FieldGroup">
+    <label class="spectrum-Checkbox">
+        <input type="checkbox" class="spectrum-Checkbox-input" id="checkbox-0">
+        <span class="spectrum-Checkbox-box">
+      <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+        <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+      </svg>
+    </span>
+        <span class="spectrum-Checkbox-label">Checkbox</span>
+    </label>
+    <label class="spectrum-Checkbox">
+        <input type="checkbox" class="spectrum-Checkbox-input" id="checkbox-1" checked>
+        <span class="spectrum-Checkbox-box">
+      <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark" focusable="false" aria-hidden="true">
+        <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+      </svg>
+    </span>
+        <span class="spectrum-Checkbox-label">Checkbox</span>
+    </label>
+</div>
+<br>
+<h3 class="spectrum-heading3">Link</h3>
+<a href="#" class="spectrum-Link">Link using spectrum-Link</a>
+<br>
+<h3 class="spectrum-heading3">Page</h3>
+Text here!<br>
+<br><br>
+<div class="spectrum--large spectrum">
+    Text here!<br>
+</div>
+<br><br>
+
+<button class="spectrum-Button spectrum-Button--cta">Button</button>
+<br><br>
+<div class="spectrum--large">
+    <button class="spectrum-Button spectrum-Button--cta">Button</button>
+</div>
+<br><br>
+<h3 class="spectrum-heading3">Table</h3>
+<table class="spectrum-Table">
+    <thead class="spectrum-Table-head">
+    <tr>
+        <th class="spectrum-Table-headCell is-sortable is-sorted-asc" aria-sort="ascending" tabindex="0">
+            Column Title
+            <svg class="spectrum-Icon spectrum-UIIcon-ArrowDownSmall spectrum-Table-sortedIcon" focusable="false" aria-hidden="true">
+                <use xlink:href="#spectrum-css-icon-ArrowDownSmall" />
+            </svg>
+        </th>
+        <th class="spectrum-Table-headCell is-sortable"" aria-sort="none" tabindex="0">
+        Column Title
+        <svg class="spectrum-Icon spectrum-UIIcon-ArrowDownSmall spectrum-Table-sortedIcon" focusable="false" aria-hidden="true">
+            <use xlink:href="#spectrum-css-icon-ArrowDownSmall" />
+        </svg>
+        </th>
+        <th class="spectrum-Table-headCell">Column Title</th>
+    </tr>
+    </thead>
+    <tbody class="spectrum-Table-body">
+    <tr class="spectrum-Table-row">
+        <td class="spectrum-Table-cell spectrum-Table-cell--divider">Row Item Alpha</td>
+        <td class="spectrum-Table-cell">Row Item Alpha</td>
+        <td class="spectrum-Table-cell">Row Item Alpha</td>
+    </tr>
+    <tr class="spectrum-Table-row">
+        <td class="spectrum-Table-cell spectrum-Table-cell--divider">Row Item Bravo</td>
+        <td class="spectrum-Table-cell">Row Item Bravo</td>
+        <td class="spectrum-Table-cell">Row Item Bravo</td>
+    </tr>
+    <tr class="spectrum-Table-row">
+        <td class="spectrum-Table-cell spectrum-Table-cell--divider">Row Item Charlie</td>
+        <td class="spectrum-Table-cell">Row Item Charlie</td>
+        <td class="spectrum-Table-cell">Row Item Charlie</td>
+    </tr>
+    <tr class="spectrum-Table-row">
+        <td class="spectrum-Table-cell spectrum-Table-cell--divider">Row Item Delta</td>
+        <td class="spectrum-Table-cell">Row Item Delta</td>
+        <td class="spectrum-Table-cell">Row Item Delta</td>
+    </tr>
+    <tr class="spectrum-Table-row">
+        <td class="spectrum-Table-cell spectrum-Table-cell--divider">Row Item Echo</td>
+        <td class="spectrum-Table-cell">Row Item Echo</td>
+        <td class="spectrum-Table-cell">Row Item Echo</td>
+    </tr>
+    </tbody>
+</table>
+<br>
+<h3 class="spectrum-heading3">Tabs</h3>
+<div class="spectrum-Tabs spectrum-Tabs--horizontal">
+    <div class="spectrum-Tabs-item is-selected" tabindex="0">
+        <label class="spectrum-Tabs-itemLabel">Tab 1</label>
+    </div>
+    <div class="spectrum-Tabs-item" tabindex="0">
+        <label class="spectrum-Tabs-itemLabel">Tab 2</label>
+    </div>
+    <div class="spectrum-Tabs-item" tabindex="0">
+        <label class="spectrum-Tabs-itemLabel">Tab 3</label>
+    </div>
+    <div class="spectrum-Tabs-item" tabindex="0">
+        <label class="spectrum-Tabs-itemLabel">Tab 4</label>
+    </div>
+    <div class="spectrum-Tabs-selectionIndicator" style="width: 27px; left: 0px;"></div>
+</div>
+<br>
+<h3 class="spectrum-heading3">Text Area</h3>
+<textarea placeholder="Enter your life story" name="field" class="spectrum-Textfield spectrum-Textfield--multiline">
+</textarea>
+
+<textarea placeholder="Enter your life story" name="field" class="spectrum-Textfield spectrum-Textfield--multiline" disabled>
+</textarea>
+
+<textarea placeholder="Enter your life story" name="field" class="spectrum-Textfield spectrum-Textfield--multiline is-valid" required>
+</textarea>
+
+<textarea placeholder="Enter your life story" name="field" class="spectrum-Textfield spectrum-Textfield--multiline is-invalid" required>
+</textarea>
+<br>
+<h3 class="spectrum-heading3">Text Field</h3>
+<input type="text" placeholder="Enter your name" name="field" value="" class="spectrum-Textfield">
+
+<input type="text" placeholder="Enter your name" name="field" value="" class="spectrum-Textfield" disabled>
+
+<input type="text" placeholder="Enter your name" name="field" value="A valid input" class="spectrum-Textfield is-valid" pattern="[\w\s]+" required>
+
+<input type="text" placeholder="Enter your name" name="field" value="A valid input" class="spectrum-Textfield is-valid" pattern="[\w\s]+" required disabled>
+
+<input type="text" placeholder="Enter your name" name="field" value="Not a valid input" class="spectrum-Textfield" pattern="[\d]+" required>
+
+<input type="text" placeholder="Enter your name" name="field" value="Not a valid input" class="spectrum-Textfield is-invalid" disabled>
+<br>
+<h3 class="spectrum-heading3">Toggle</h3>
+<div class="spectrum-ToggleSwitch">
+    <input type="checkbox" class="spectrum-ToggleSwitch-input" id="toggle-onoff-0">
+    <span class="spectrum-ToggleSwitch-switch"></span>
+    <label class="spectrum-ToggleSwitch-label" for="toggle-onoff-0">Toggle Off</label>
+</div>
+<div class="spectrum-ToggleSwitch">
+    <input type="checkbox" class="spectrum-ToggleSwitch-input" id="toggle-onoff-1" checked>
+    <span class="spectrum-ToggleSwitch-switch"></span>
+    <label class="spectrum-ToggleSwitch-label" for="toggle-onoff-1">Toggle On</label>
+</div>
+
+<br>
+
+<div class="spectrum-ToggleSwitch">
+    <input type="checkbox" class="spectrum-ToggleSwitch-input" id="toggle-onoff-disabled-0" disabled>
+    <span class="spectrum-ToggleSwitch-switch"></span>
+    <label class="spectrum-ToggleSwitch-label" for="toggle-onoff-disabled-0">Toggle Off</label>
+</div>
+<div class="spectrum-ToggleSwitch">
+    <input type="checkbox" class="spectrum-ToggleSwitch-input" id="toggle-onoff-disabled-1" checked disabled>
+    <span class="spectrum-ToggleSwitch-switch"></span>
+    <label class="spectrum-ToggleSwitch-label" for="toggle-onoff-disabled-1">Toggle On</label>
+</div>
+<br>
+<h3 class="spectrum-heading3">Tooltip</h3>
+<span class="spectrum-Tooltip spectrum-Tooltip--top spectrum-Tooltip--info is-open">
+  <span class="spectrum-Tooltip-label">Label</span>
+  <span class="spectrum-Tooltip-tip"></span>
+</span>
+<span class="spectrum-Tooltip spectrum-Tooltip--top spectrum-Tooltip--info is-open">
+  <span class="spectrum-Tooltip-label">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+  <span class="spectrum-Tooltip-tip"></span>
+</span>
+<span class="spectrum-Tooltip spectrum-Tooltip--top spectrum-Tooltip--info is-open">
+  <svg class="spectrum-Icon spectrum-UIIcon-InfoSmall spectrum-Tooltip-typeIcon" focusable="false" aria-hidden="true">
+    <use xlink:href="#spectrum-css-icon-InfoSmall" />
+  </svg>
+  <span class="spectrum-Tooltip-label">Info</span>
+  <span class="spectrum-Tooltip-tip"></span>
+</span>
+<span class="spectrum-Tooltip spectrum-Tooltip--top spectrum-Tooltip--info is-open">
+  <svg class="spectrum-Icon spectrum-UIIcon-InfoSmall spectrum-Tooltip-typeIcon" focusable="false" aria-hidden="true">
+    <use xlink:href="#spectrum-css-icon-InfoSmall" />
+  </svg>
+  <span class="spectrum-Tooltip-label">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+  <span class="spectrum-Tooltip-tip"></span>
+</span>
+<br>
+</body>
+</html>

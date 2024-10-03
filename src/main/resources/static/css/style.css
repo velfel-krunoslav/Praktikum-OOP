@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background: url('https://lh3.ggpht.com/p/AF1QipOvyu00OcCeEwn5tBoMXjjdwZ8rND0ybAX44M_6=s1920') no-repeat center center fixed;
+    background-size: cover;
+}
+.wrapper {
+    border-radius: 16px;
+    border: 1px solid rgb(13, 102, 208);
+    height: 350px;
+    width: 500px;
+    overflow: hidden;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.login-panel {
+    background: url('https://lh3.ggpht.com/p/AF1QipOvyu00OcCeEwn5tBoMXjjdwZ8rND0ybAX44M_6=s1920') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+    filter: contrast(25%) brightness(185%) blur(14px);
+    position: absolute;
+    height: 1000px;
+    top: -100px;
+    left: -100px;
+    right: -100px;
+    bottom: -100px;
+    z-index: -1;
+}
+.hero {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(13, 102, 208);
+}
+
+.container{
+    width: 400px;
+    margin: 0 auto;
+    padding:0;
+}
+
+.spectrum-Toast {
+    width: 100%;
+    border-radius: 0;
+}
+
+.spectrum-Textfield:nth-child(1) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.spectrum-Textfield:nth-child(2) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.credentials {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+.credentials > * {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 40px;
+}
+.container > .spectrum-Button {
+    float: right;
+    margin-top: 15px;
+    margin-right: 50px;
+}
+.spectrum-Toast-typeIcon {
+    margin: 7px 15px 7px 2px;
+}
